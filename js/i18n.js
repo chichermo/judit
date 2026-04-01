@@ -96,6 +96,7 @@
       "contact.location": "Taller · Lovaina, Bélgica",
       "contact.cardLabel": "Seguir el taller",
       "contact.instagramBtn": "@tormentatelar",
+      "contact.waBtn": "WhatsApp",
       "footer.top": "Arriba",
       "footer.ig": "Instagram",
       "lightbox.detail": "Ficha completa →",
@@ -177,6 +178,7 @@
       "contact.location": "Studio · Leuven, Belgium",
       "contact.cardLabel": "Follow the studio",
       "contact.instagramBtn": "@tormentatelar",
+      "contact.waBtn": "WhatsApp",
       "footer.top": "Top",
       "footer.ig": "Instagram",
       "lightbox.detail": "Full details →",
@@ -258,6 +260,7 @@
       "contact.location": "Atelier · Leuven, België",
       "contact.cardLabel": "Volg het atelier",
       "contact.instagramBtn": "@tormentatelar",
+      "contact.waBtn": "WhatsApp",
       "footer.top": "Boven",
       "footer.ig": "Instagram",
       "lightbox.detail": "Volledige fiche →",
@@ -339,6 +342,7 @@
       "contact.location": "Atelier · Louvain, Belgique",
       "contact.cardLabel": "Suivre l’atelier",
       "contact.instagramBtn": "@tormentatelar",
+      "contact.waBtn": "WhatsApp",
       "footer.top": "Haut",
       "footer.ig": "Instagram",
       "lightbox.detail": "Fiche complète →",
@@ -420,6 +424,7 @@
       "contact.location": "Atelier · Löwen, Belgien",
       "contact.cardLabel": "Atelier folgen",
       "contact.instagramBtn": "@tormentatelar",
+      "contact.waBtn": "WhatsApp",
       "footer.top": "Nach oben",
       "footer.ig": "Instagram",
       "lightbox.detail": "Details & Kauf →",
@@ -532,6 +537,10 @@
 
     const wa = document.querySelector(".fab-wa");
     if (wa) wa.setAttribute("aria-label", t("a11y.wa"));
+
+    document.querySelectorAll(".btn-wa-contact").forEach((el) => {
+      el.setAttribute("aria-label", t("a11y.wa"));
+    });
 
     const langSelect = document.getElementById("lang-select");
     if (langSelect) {
