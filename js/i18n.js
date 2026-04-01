@@ -22,6 +22,14 @@
       "meta.title": "Tormenta Telar — Arte textil y dibujo · Judit Lara",
       "meta.description":
         "Taller de Judit Lara en Lovaina: bordado, telar, dibujo e ilustración. Arte textil entre Chile y Europa.",
+      "meta.titleTaller": "Taller · Tormenta Telar",
+      "meta.titleLineas": "Líneas de trabajo · Tormenta Telar",
+      "meta.titleObra": "Obra · Tormenta Telar",
+      "meta.titleContact": "Contacto · Tormenta Telar",
+      "meta.descInner":
+        "Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica.",
+      "footer.home": "Inicio",
+      "lineas.hint": "Entra en la galería ya filtrada por cada línea.",
       "a11y.skip": "Saltar al contenido",
       "a11y.menu": "Menú",
       "a11y.brandHome": "Tormenta Telar, inicio",
@@ -96,6 +104,13 @@
       "meta.title": "Tormenta Telar — Textile art & drawing · Judit Lara",
       "meta.description":
         "Judit Lara’s studio in Leuven: embroidery, weaving, drawing and illustration. Contemporary textile work between Chile and Europe.",
+      "meta.titleTaller": "Studio · Tormenta Telar",
+      "meta.titleLineas": "Lines of work · Tormenta Telar",
+      "meta.titleObra": "Work · Tormenta Telar",
+      "meta.titleContact": "Contact · Tormenta Telar",
+      "meta.descInner": "Tormenta Telar — Judit Lara. Embroidery, loom, drawing. Leuven, Belgium.",
+      "footer.home": "Home",
+      "lineas.hint": "Open the gallery filtered for each line.",
       "a11y.skip": "Skip to content",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, home",
@@ -170,6 +185,13 @@
       "meta.title": "Tormenta Telar — Textielkunst en tekening · Judit Lara",
       "meta.description":
         "Atelier van Judit Lara in Leuven: borduurwerk, weven, tekening en illustratie. Hedendaagse textiel tussen Chili en Europa.",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleLineas": "Werklijnen · Tormenta Telar",
+      "meta.titleObra": "Werk · Tormenta Telar",
+      "meta.titleContact": "Contact · Tormenta Telar",
+      "meta.descInner": "Tormenta Telar — Judit Lara. Leuven, België.",
+      "footer.home": "Home",
+      "lineas.hint": "Open de galerij gefilterd per lijn.",
       "a11y.skip": "Naar inhoud",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, home",
@@ -244,6 +266,13 @@
       "meta.title": "Tormenta Telar — Art textile et dessin · Judit Lara",
       "meta.description":
         "Atelier de Judit Lara à Louvain : broderie, tissage, dessin et illustration. Textile contemporain entre le Chili et l’Europe.",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleLineas": "Lignes de travail · Tormenta Telar",
+      "meta.titleObra": "Œuvres · Tormenta Telar",
+      "meta.titleContact": "Contact · Tormenta Telar",
+      "meta.descInner": "Tormenta Telar — Judit Lara. Louvain, Belgique.",
+      "footer.home": "Accueil",
+      "lineas.hint": "Ouvrir la galerie filtrée pour chaque ligne.",
       "a11y.skip": "Aller au contenu",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, accueil",
@@ -318,6 +347,13 @@
       "meta.title": "Tormenta Telar — Textilkunst und Zeichnung · Judit Lara",
       "meta.description":
         "Atelier von Judit Lara in Löwen: Stickerei, Weben, Zeichnung und Illustration. Zeitgenössische Textilkunst zwischen Chile und Europa.",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleLineas": "Arbeitslinien · Tormenta Telar",
+      "meta.titleObra": "Werk · Tormenta Telar",
+      "meta.titleContact": "Kontakt · Tormenta Telar",
+      "meta.descInner": "Tormenta Telar — Judit Lara. Löwen, Belgien.",
+      "footer.home": "Start",
+      "lineas.hint": "Galerie pro Linie gefiltert öffnen.",
       "a11y.skip": "Zum Inhalt",
       "a11y.menu": "Menü",
       "a11y.brandHome": "Tormenta Telar, Start",
@@ -453,11 +489,24 @@
       el.innerHTML = t(key);
     });
 
+    const page = document.body.getAttribute("data-page") || "home";
+    const titleKey =
+      page === "taller"
+        ? "meta.titleTaller"
+        : page === "lineas"
+          ? "meta.titleLineas"
+          : page === "obra"
+            ? "meta.titleObra"
+            : page === "contact"
+              ? "meta.titleContact"
+              : "meta.title";
+    const descKey = page === "home" ? "meta.description" : "meta.descInner";
+
     const titleEl = document.querySelector("title");
-    if (titleEl) titleEl.textContent = t("meta.title");
+    if (titleEl) titleEl.textContent = t(titleKey);
 
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", t("meta.description"));
+    if (meta) meta.setAttribute("content", t(descKey));
 
     const skip = document.querySelector(".skip-link");
     if (skip) skip.textContent = t("a11y.skip");

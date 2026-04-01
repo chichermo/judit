@@ -4,6 +4,53 @@
   /** @typedef {{ id: number, name: string, image: string, price: string, currency: string, url: string }} Product */
 
   const I18N = window.TT_I18N;
+  const page = document.body.getAttribute("data-page") || "home";
+
+  const navToggle = document.getElementById("nav-toggle");
+  const siteNav = document.getElementById("site-nav");
+  const yearEl = document.getElementById("year");
+  const heroImg = document.getElementById("hero-img");
+  const galleryGrid = document.getElementById("gallery-grid");
+
+  const products = /** @type {Product[]} */ (window.__TT_PRODUCTS__ || []);
+
+  if (yearEl) {
+    yearEl.textContent = String(new Date().getFullYear());
+  }
+
+  navToggle?.addEventListener("click", () => {
+    const expanded = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-expanded", String(!expanded));
+    siteNav?.classList.toggle("is-open", !expanded);
+  });
+
+  document.querySelectorAll("[data-nav]").forEach((link) => {
+    link.addEventListener("click", () => {
+      navToggle?.setAttribute("aria-expanded", "false");
+      siteNav?.classList.remove("is-open");
+    });
+  });
+
+  function initReveal() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll(".reveal").forEach((el) => {
+        el.classList.add("reveal-visible");
+      });
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
+    );
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+  }
 
   /** @param {string} name */
   function categorize(name) {
@@ -23,34 +70,10 @@
     return "dibujo";
   }
 
-  const products = /** @type {Product[]} */ (window.__TT_PRODUCTS__ || []);
   const enriched = products.map((p) => ({
     ...p,
     category: categorize(p.name),
   }));
-
-  let activeFilter = "all";
-  /** @type {typeof enriched} */
-  let visibleItems = [];
-  let lightboxIndex = 0;
-  /** @type {HTMLElement | null} */
-  let lastGalleryFocus = null;
-
-  const galleryGrid = document.getElementById("gallery-grid");
-  const countEl = document.getElementById("gallery-visible-count");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxTitle = document.getElementById("lightbox-title");
-  const lightboxPrice = document.getElementById("lightbox-price");
-  const lightboxLink = document.getElementById("lightbox-link");
-  const navToggle = document.getElementById("nav-toggle");
-  const siteNav = document.getElementById("site-nav");
-  const yearEl = document.getElementById("year");
-  const heroImg = document.getElementById("hero-img");
-
-  if (yearEl) {
-    yearEl.textContent = String(new Date().getFullYear());
-  }
 
   function categoryLabels() {
     return I18N.getCategories();
@@ -72,7 +95,7 @@
   }
 
   function setHeroFromCatalog() {
-    if (!heroImg) return;
+    if (!heroImg || !enriched.length) return;
     const first = enriched[0];
     if (first?.image) {
       heroImg.src = first.image;
@@ -80,8 +103,95 @@
     heroImg.alt = I18N.t("hero.imgAlt");
   }
 
+  function initHeroParallax() {
+    const root = document.getElementById("hero-parallax-root");
+    const visual = document.querySelector("[data-hero-visual]");
+    if (!root || !visual || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let raf = 0;
+    function onMove(mx, my) {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const rect = root.getBoundingClientRect();
+        const cx = (mx - rect.left) / rect.width - 0.5;
+        const cy = (my - rect.top) / rect.height - 0.5;
+        const maxT = 14;
+        visual.style.setProperty("--tilt-x", `${(-cy * maxT).toFixed(2)}deg`);
+        visual.style.setProperty("--tilt-y", `${(cx * maxT).toFixed(2)}deg`);
+        root.style.setProperty("--px", `${(cx * 18).toFixed(2)}px`);
+        root.style.setProperty("--py", `${(cy * 14).toFixed(2)}px`);
+      });
+    }
+
+    root.addEventListener("pointermove", (e) => onMove(e.clientX, e.clientY), { passive: true });
+    root.addEventListener(
+      "pointerleave",
+      () => {
+        visual.style.setProperty("--tilt-x", "0deg");
+        visual.style.setProperty("--tilt-y", "0deg");
+        root.style.setProperty("--px", "0px");
+        root.style.setProperty("--py", "0px");
+      },
+      { passive: true }
+    );
+  }
+
+  function initCursorGlow() {
+    const el = document.getElementById("cursor-glow");
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      el.style.display = "none";
+      return;
+    }
+    let raf = 0;
+    document.addEventListener(
+      "pointermove",
+      (e) => {
+        if (raf) cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          el.style.setProperty("--cx", `${e.clientX}px`);
+          el.style.setProperty("--cy", `${e.clientY}px`);
+        });
+      },
+      { passive: true }
+    );
+  }
+
+  if (page === "home") {
+    setHeroFromCatalog();
+    initHeroParallax();
+    initCursorGlow();
+  }
+
+  initReveal();
+
+  if (!galleryGrid) {
+    window.addEventListener("tt-locale-change", () => {
+      if (page === "home") setHeroFromCatalog();
+    });
+    return;
+  }
+
+  let activeFilter = (function readFilterFromURL() {
+    const q = new URLSearchParams(location.search).get("f") || new URLSearchParams(location.search).get("filter");
+    if (!q || q === "all") return "all";
+    const allowed = ["bordado", "telar", "dibujo", "arcilla"];
+    return allowed.includes(q) ? q : "all";
+  })();
+
+  let visibleItems = [];
+  let lightboxIndex = 0;
+  /** @type {HTMLElement | null} */
+  let lastGalleryFocus = null;
+
+  const countEl = document.getElementById("gallery-visible-count");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxTitle = document.getElementById("lightbox-title");
+  const lightboxPrice = document.getElementById("lightbox-price");
+  const lightboxLink = document.getElementById("lightbox-link");
+
   function renderGallery() {
-    if (!galleryGrid) return;
     galleryGrid.innerHTML = "";
     const labels = categoryLabels();
 
@@ -151,6 +261,11 @@
       el.hidden = !show;
     });
     updateVisibleCount();
+    const q = filter === "all" ? "" : `?f=${filter}`;
+    const base = `${location.pathname}`;
+    if (history.replaceState) {
+      history.replaceState(null, "", q ? `${base}${q}` : base);
+    }
     if (!opts?.silent) {
       const first = document.querySelector(".gallery-item:not([hidden])");
       if (first) first.focus({ preventScroll: true });
@@ -229,127 +344,6 @@
     });
   });
 
-  navToggle?.addEventListener("click", () => {
-    const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    siteNav?.classList.toggle("is-open", !expanded);
-  });
-
-  document.querySelectorAll("[data-nav]").forEach((link) => {
-    link.addEventListener("click", () => {
-      navToggle?.setAttribute("aria-expanded", "false");
-      siteNav?.classList.remove("is-open");
-    });
-  });
-
-  const sectionIds = ["inicio", "sobre", "colecciones", "galeria", "contacto"];
-  const navObservers = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const id = entry.target.getAttribute("id");
-        if (!id) return;
-        document.querySelectorAll("[data-nav]").forEach((a) => {
-          const href = a.getAttribute("href");
-          if (href === `#${id}`) {
-            a.setAttribute("aria-current", "page");
-          } else {
-            a.removeAttribute("aria-current");
-          }
-        });
-      });
-    },
-    { rootMargin: "-40% 0px -40% 0px", threshold: 0 }
-  );
-
-  sectionIds.forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) navObservers.observe(el);
-  });
-
-  function initReveal() {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      document.querySelectorAll(".reveal").forEach((el) => {
-        el.classList.add("reveal-visible");
-      });
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("reveal-visible");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
-    );
-    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-  }
-
-  function initHeroParallax() {
-    const root = document.getElementById("hero-parallax-root");
-    const visual = document.querySelector("[data-hero-visual]");
-    if (!root || !visual || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let raf = 0;
-    /** @param {number} mx */
-    /** @param {number} my */
-    function onMove(mx, my) {
-      if (raf) cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const rect = root.getBoundingClientRect();
-        const cx = (mx - rect.left) / rect.width - 0.5;
-        const cy = (my - rect.top) / rect.height - 0.5;
-        const maxT = 14;
-        visual.style.setProperty("--tilt-x", `${(-cy * maxT).toFixed(2)}deg`);
-        visual.style.setProperty("--tilt-y", `${(cx * maxT).toFixed(2)}deg`);
-        root.style.setProperty("--px", `${(cx * 18).toFixed(2)}px`);
-        root.style.setProperty("--py", `${(cy * 14).toFixed(2)}px`);
-      });
-    }
-
-    root.addEventListener(
-      "pointermove",
-      (e) => {
-        onMove(e.clientX, e.clientY);
-      },
-      { passive: true }
-    );
-    root.addEventListener(
-      "pointerleave",
-      () => {
-        visual.style.setProperty("--tilt-x", "0deg");
-        visual.style.setProperty("--tilt-y", "0deg");
-        root.style.setProperty("--px", "0px");
-        root.style.setProperty("--py", "0px");
-      },
-      { passive: true }
-    );
-  }
-
-  function initCursorGlow() {
-    const el = document.getElementById("cursor-glow");
-    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (window.matchMedia("(max-width: 900px)").matches) {
-      el.style.display = "none";
-      return;
-    }
-    let raf = 0;
-    document.addEventListener(
-      "pointermove",
-      (e) => {
-        if (raf) cancelAnimationFrame(raf);
-        raf = requestAnimationFrame(() => {
-          el.style.setProperty("--cx", `${e.clientX}px`);
-          el.style.setProperty("--cy", `${e.clientY}px`);
-        });
-      },
-      { passive: true }
-    );
-  }
-
   function initGalleryTilt() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     document.addEventListener(
@@ -376,17 +370,12 @@
   }
 
   window.addEventListener("tt-locale-change", () => {
-    setHeroFromCatalog();
     renderGallery();
     if (lightbox && !lightbox.hidden && visibleItems.length) {
       openLightbox();
     }
   });
 
-  setHeroFromCatalog();
   renderGallery();
-  initReveal();
-  initHeroParallax();
-  initCursorGlow();
   initGalleryTilt();
 })();
