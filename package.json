@@ -1,0 +1,8 @@
+{
+  "name": "tormenta-telar",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve -l 3000 .",
+    "preview": "npx --yes serve -l 3000 ."
+  }
+}

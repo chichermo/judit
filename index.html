@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tormenta Telar — Arte textil y dibujo · Judit Lara</title>
+    <meta
+      name="description"
+      content="Taller de Judit Lara en Lovaina: bordado, telar, dibujo e ilustración. Arte textil entre Chile y Europa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      id="fonts-gf"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        if (location.protocol !== "file:") return;
+        var el = document.getElementById("fonts-gf");
+        if (el) el.remove();
+        var s = document.createElement("style");
+        s.textContent =
+          ":root{--font-display:Georgia,'Times New Roman',serif;--font-ui:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}";
+        document.head.appendChild(s);
+      })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314201c'/%3E%3Cpath d='M6 22 Q16 8 26 20' fill='none' stroke='%23c4a574' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 18 Q14 12 20 22' fill='none' stroke='%236b8f7e' stroke-width='1.5' stroke-linecap='round' opacity='.85'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Tormenta Telar, inicio">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <span class="brand-name">Tormenta Telar</span>
+            <span class="brand-tag" data-i18n="brand.tag">taller textil</span>
+          </div>
+        </a>
+
+        <div class="header-tools">
+          <label class="visually-hidden" for="lang-select" data-i18n="a11y.lang">Idioma</label>
+          <select id="lang-select" class="lang-select" aria-label="Idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="nl">Nederlands</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+          </select>
+
+          <a
+            class="shop-pill"
+            href="https://www.etsy.com/shop/juditlarae/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="shop.online"
+            >Tienda online</a
+          >
+        </div>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          id="nav-toggle"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menú</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Principal">
+          <ul class="nav-list">
+            <li><a href="#inicio" data-nav aria-current="page" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#sobre" data-nav data-i18n="nav.studio">Taller</a></li>
+            <li><a href="#colecciones" data-nav data-i18n="nav.lines">Líneas</a></li>
+            <li><a href="#galeria" data-nav data-i18n="nav.work">Obra</a></li>
+            <li><a href="#contacto" data-nav data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-mesh" aria-hidden="true"></div>
+        <div class="hero-bg-slant" aria-hidden="true"></div>
+
+        <div class="hero-inner" id="hero-parallax-root">
+          <div class="hero-copy reveal reveal-up">
+            <p class="hero-kicker" data-i18n="hero.kicker">Judit Lara · Lovaina, Bélgica</p>
+            <h1 id="hero-title">
+              <span class="hero-title-line" data-i18n="hero.title1">Tormenta</span>
+              <span class="hero-title-line hero-title-line--accent" data-i18n="hero.title2">Telar</span>
+            </h1>
+            <p class="hero-lead" data-i18n="hero.lead">
+              Hilo, trama y papel: piezas únicas donde conviven el bordado, el telar y el dibujo.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#galeria" data-i18n="hero.ctaWork">Ver obra</a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.instagram.com/tormentatelar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.ctaIg"
+                >Instagram</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual reveal reveal-up reveal-delay-1" data-hero-visual>
+            <div class="hero-blob" aria-hidden="true"></div>
+            <div class="hero-frame" id="hero-frame-tilt">
+              <div class="hero-img-shine" aria-hidden="true"></div>
+              <div class="hero-img-wrap">
+                <img
+                  id="hero-img"
+                  src=""
+                  alt=""
+                  width="900"
+                  height="560"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="hero-corner hero-corner--tl" aria-hidden="true"></div>
+              <div class="hero-corner hero-corner--br" aria-hidden="true"></div>
+            </div>
+            <p class="hero-caption" data-i18n="hero.caption">Textil · bordado · telar · papel</p>
+          </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-inner"></div>
+        </div>
+      </section>
+
+      <section class="section section-about" id="sobre" aria-labelledby="about-title">
+        <div class="about-layout container">
+          <div class="about-rail reveal reveal-fade">
+            <span class="about-rail-text" data-i18n="about.rail">taller · obra</span>
+          </div>
+          <div class="about-body">
+            <h2 id="about-title" class="section-title reveal reveal-up" data-i18n-html="about.title">
+              Un taller entre <em>dos orillas</em>
+            </h2>
+            <p class="lead reveal reveal-up" data-i18n-html="about.lead"></p>
+            <p class="reveal reveal-up" data-i18n="about.p2"></p>
+            <ul class="pillar-list">
+              <li class="reveal reveal-up">
+                <span class="pillar-num">01</span>
+                <div>
+                  <strong data-i18n="pillar1.title">Bordado</strong>
+                  <p data-i18n="pillar1.desc"></p>
+                </div>
+              </li>
+              <li class="reveal reveal-up">
+                <span class="pillar-num">02</span>
+                <div>
+                  <strong data-i18n="pillar2.title">Telar</strong>
+                  <p data-i18n="pillar2.desc"></p>
+                </div>
+              </li>
+              <li class="reveal reveal-up">
+                <span class="pillar-num">03</span>
+                <div>
+                  <strong data-i18n="pillar3.title">Papel</strong>
+                  <p data-i18n="pillar3.desc"></p>
+                </div>
+              </li>
+              <li class="reveal reveal-up">
+                <span class="pillar-num">04</span>
+                <div>
+                  <strong data-i18n="pillar4.title">Volumen</strong>
+                  <p data-i18n="pillar4.desc"></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-collections" id="colecciones" aria-labelledby="collections-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="collections-title" class="section-title reveal reveal-up" data-i18n="collections.title">Líneas</h2>
+            <p class="section-intro reveal reveal-up" data-i18n="collections.intro"></p>
+          </div>
+          <div class="filter-chips reveal reveal-up" role="group" aria-label="Filtrar por línea">
+            <button type="button" class="chip is-active" data-filter="all"><span data-i18n="cat.all">Todo</span></button>
+            <button type="button" class="chip" data-filter="bordado"><span data-i18n="cat.bordado">Bordado</span></button>
+            <button type="button" class="chip" data-filter="telar"><span data-i18n="cat.telar">Telar</span></button>
+            <button type="button" class="chip" data-filter="dibujo"><span data-i18n="cat.dibujo">Papel</span></button>
+            <button type="button" class="chip" data-filter="arcilla"><span data-i18n="cat.arcilla">Volumen</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-gallery" id="galeria" aria-labelledby="gallery-title">
+        <div class="container container--wide">
+          <div class="section-head section-head--gallery">
+            <h2 id="gallery-title" class="section-title reveal reveal-up" data-i18n="gallery.title">Obra</h2>
+            <div class="gallery-meta reveal reveal-up">
+              <p class="gallery-hint" id="gallery-hint"></p>
+              <p class="gallery-count" aria-live="polite">
+                <span id="gallery-visible-count">0</span>
+                <span id="gallery-pieces-label" data-i18n="gallery.pieces">piezas</span>
+              </p>
+            </div>
+          </div>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-panel container">
+          <div class="contact-copy">
+            <h2 id="contact-title" class="section-title reveal reveal-up" data-i18n="contact.title">Contacto</h2>
+            <p class="lead reveal reveal-up" data-i18n="contact.lead"></p>
+            <p class="reveal reveal-up" data-i18n-html="contact.shopNote"></p>
+            <p class="muted location reveal reveal-up" data-i18n="contact.location"></p>
+          </div>
+          <div class="contact-card reveal reveal-up">
+            <p class="contact-card-label" data-i18n="contact.cardLabel"></p>
+            <a
+              class="btn btn-instagram btn-block"
+              href="https://www.instagram.com/tormentatelar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="contact.instagramBtn"
+              >@tormentatelar</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-name">Tormenta Telar</span>
+          <span class="footer-copy">© <span id="year"></span> Judit Lara</span>
+        </div>
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.instagram.com/tormentatelar/" target="_blank" rel="noopener noreferrer" data-i18n="footer.ig"
+              >Instagram</a
+            >
+          </li>
+          <li><a href="#inicio" data-i18n="footer.top">Arriba</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <a
+      class="fab-wa"
+      href="https://wa.me/32470530362"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+    >
+      <svg class="fab-wa-icon" viewBox="0 0 24 24" aria-hidden="true" width="28" height="28">
+        <path
+          fill="currentColor"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.718 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.882 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+      <span class="fab-wa-label" data-i18n="wa.label">WhatsApp</span>
+    </a>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Vista ampliada"
+      hidden
+    >
+      <div class="lightbox-backdrop" data-close-lightbox></div>
+      <div class="lightbox-panel">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar">×</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Anterior">‹</button>
+        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Siguiente">›</button>
+        <figure class="lightbox-figure">
+          <img id="lightbox-img" src="" alt="" />
+          <figcaption class="lightbox-caption">
+            <p id="lightbox-title"></p>
+            <p class="lightbox-meta">
+              <span id="lightbox-price"></span>
+              <a id="lightbox-link" href="#" target="_blank" rel="noopener noreferrer">Ficha completa →</a>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
