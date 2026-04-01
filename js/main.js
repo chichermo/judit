@@ -1,6 +1,16 @@
 (function () {
   "use strict";
 
+  if (
+    typeof window !== "undefined" &&
+    location.protocol === "file:" &&
+    window.parent !== window.self
+  ) {
+    console.warn(
+      "[Tormenta Telar] Esta página está en un marco con file://. Chrome suele bloquear orígenes file en iframes. Abre el sitio con HTTP: en la carpeta del proyecto ejecuta «npm start» y entra en http://localhost:3000, o abre index.html en una pestaña normal (no en vista previa embebida)."
+    );
+  }
+
   /** @typedef {{ id: number, name: string, image: string, price: string, currency: string, url: string }} Product */
 
   const I18N = window.TT_I18N;
