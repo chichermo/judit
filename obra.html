@@ -2,12 +2,22 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f5f1" />
     <title>Obra · Tormenta Telar</title>
-    <meta
-      name="description"
-      content="Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica."
-    />
+    <meta name="description" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
+    <link rel="canonical" href="https://judit.vercel.app/obra.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://judit.vercel.app/obra.html" />
+    <meta property="og:title" id="meta-og-title" content="Obra · Tormenta Telar" />
+    <meta property="og:description" id="meta-og-desc" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
+    <meta property="og:image" content="https://judit.vercel.app/Logos/logo-principal.png" />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="meta-tw-title" content="Obra · Tormenta Telar" />
+    <meta name="twitter:description" id="meta-tw-desc" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
+    <meta name="twitter:image" content="https://judit.vercel.app/Logos/logo-principal.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tormenta Telar","description":"Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara.","inLanguage":["es","en","nl","fr","de"],"url":"https://judit.vercel.app/"},{"@type":"Person","name":"Judit Lara","jobTitle":"Artista textil","sameAs":["https://www.instagram.com/tormentatelar/","https://www.etsy.com/shop/juditlarae/"],"url":"https://judit.vercel.app"}]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +38,7 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="Logos/logo-principal.png" type="image/png" />
+
   </head>
   <body class="page-sub" data-page="obra">
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -96,8 +107,16 @@
       </div>
     </header>
 
-    <main id="main">
-      <section class="section section-gallery" id="galeria" aria-labelledby="obra-title">
+    <main id="main" class="main-content">
+    <div class="container breadcrumb-wrap">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <ol class="breadcrumb-list">
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li aria-current="page"><span data-i18n="nav.work">Obra</span></li>
+        </ol>
+      </nav>
+    </div>
+      <section class="section section-gallery section-page" id="galeria" aria-labelledby="obra-title">
         <div class="container container--wide">
           <div class="section-head section-head--gallery">
             <div>
@@ -122,6 +141,7 @@
           <div class="gallery-grid" id="gallery-grid"></div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -161,6 +181,7 @@
         </ul>
       </div>
     </footer>
+
 
     <a
       class="fab-wa"

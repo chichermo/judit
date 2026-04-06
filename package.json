@@ -1,7 +1,9 @@
 {
   "name": "tormenta-telar",
   "private": true,
+  "homepage": "https://judit.vercel.app",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "start": "npx --yes serve -l 3000 .",
     "preview": "npx --yes serve -l 3000 ."
   }

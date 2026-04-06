@@ -2,12 +2,22 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f5f1" />
     <title>Líneas de trabajo · Tormenta Telar</title>
-    <meta
-      name="description"
-      content="Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica."
-    />
+    <meta name="description" content="Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada." />
+    <link rel="canonical" href="https://judit.vercel.app/lineas.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://judit.vercel.app/lineas.html" />
+    <meta property="og:title" id="meta-og-title" content="Líneas de trabajo · Tormenta Telar" />
+    <meta property="og:description" id="meta-og-desc" content="Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada." />
+    <meta property="og:image" content="https://judit.vercel.app/Logos/logo-principal.png" />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="meta-tw-title" content="Líneas de trabajo · Tormenta Telar" />
+    <meta name="twitter:description" id="meta-tw-desc" content="Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada." />
+    <meta name="twitter:image" content="https://judit.vercel.app/Logos/logo-principal.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tormenta Telar","description":"Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada.","inLanguage":["es","en","nl","fr","de"],"url":"https://judit.vercel.app/"},{"@type":"Person","name":"Judit Lara","jobTitle":"Artista textil","sameAs":["https://www.instagram.com/tormentatelar/","https://www.etsy.com/shop/juditlarae/"],"url":"https://judit.vercel.app"}]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +38,7 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="Logos/logo-principal.png" type="image/png" />
+
   </head>
   <body class="page-sub" data-page="lineas">
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -96,13 +107,21 @@
       </div>
     </header>
 
-    <main id="main">
-      <section class="section section-lineas" aria-labelledby="lineas-title">
+    <main id="main" class="main-content">
+    <div class="container breadcrumb-wrap">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <ol class="breadcrumb-list">
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li aria-current="page"><span data-i18n="nav.lines">Líneas</span></li>
+        </ol>
+      </nav>
+    </div>
+      <section class="section section-lineas section-page" aria-labelledby="lineas-title">
         <div class="container">
-          <div class="section-head">
+          <div class="section-head section-head--spaced">
             <h1 id="lineas-title" class="section-title reveal reveal-up" data-i18n="collections.title">Líneas</h1>
-            <p class="lineas-intro reveal reveal-up" data-i18n="collections.intro"></p>
-            <p class="lineas-intro reveal reveal-up reveal-delay-1" data-i18n="lineas.hint"></p>
+            <p class="lineas-intro section-intro reveal reveal-up" data-i18n="collections.intro"></p>
+            <p class="lineas-intro section-intro reveal reveal-up reveal-delay-1" data-i18n="lineas.hint"></p>
           </div>
           <ul class="lineas-grid reveal reveal-up">
             <li>
@@ -138,6 +157,7 @@
           </ul>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -178,6 +198,7 @@
       </div>
     </footer>
 
+
     <a
       class="fab-wa"
       href="https://wa.me/32470530362"
@@ -193,6 +214,7 @@
       </svg>
       <span class="fab-wa-label" data-i18n="wa.label">WhatsApp</span>
     </a>
+
 
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>

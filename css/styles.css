@@ -102,6 +102,17 @@
   --tilt-y: 0deg;
   --gx: 0deg;
   --gy: 0deg;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.35rem;
+  --space-6: 1.75rem;
+  --space-8: 2.5rem;
+  --page-pad-x: clamp(1rem, 4vw, 1.35rem);
+  --content-max: 62ch;
+  --section-pad-y: clamp(2.25rem, 6vw, 5rem);
+  --tap-min: 2.75rem;
 }
 
 *,
@@ -112,6 +123,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@supports (padding: env(safe-area-inset-left)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -227,12 +245,81 @@ a:hover {
 }
 
 .container {
-  width: min(1080px, 100% - 2rem);
+  width: min(1080px, 100% - 2 * var(--page-pad-x));
   margin-inline: auto;
 }
 
 .container--wide {
-  width: min(1280px, 100% - 2rem);
+  width: min(1280px, 100% - 2 * var(--page-pad-x));
+}
+
+.main-content {
+  padding-bottom: max(var(--space-6), env(safe-area-inset-bottom, 0px));
+}
+
+/* Migas de pan (subpáginas) */
+.breadcrumb-wrap {
+  padding-block: var(--space-4) var(--space-2);
+}
+
+.breadcrumb {
+  display: block;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin: 0;
+  padding: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.breadcrumb-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+  content: "/";
+  opacity: 0.45;
+  font-weight: 500;
+  margin-left: var(--space-2);
+}
+
+.breadcrumb-list a {
+  color: var(--orchid);
+  text-decoration: none;
+}
+
+.breadcrumb-list a:hover {
+  color: var(--lime);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb-list li[aria-current="page"] span {
+  color: var(--text);
+}
+
+.section-head--spaced .section-title {
+  margin-bottom: var(--space-4);
+}
+
+.section-head--spaced .section-intro + .section-intro {
+  margin-top: var(--space-3);
+}
+
+.section-lead {
+  max-width: var(--content-max);
+  line-height: 1.62;
 }
 
 /* Film grain overlay */
@@ -256,7 +343,7 @@ a:hover {
 }
 
 .header-inner {
-  width: min(1280px, 100% - 1.25rem);
+  width: min(1280px, 100% - 2 * var(--page-pad-x));
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -582,7 +669,7 @@ a:hover {
 .hero-inner {
   position: relative;
   z-index: 3;
-  width: min(1280px, 100% - 2rem);
+  width: min(1280px, 100% - 2 * var(--page-pad-x));
   margin-inline: auto;
   padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
   display: grid;
@@ -1062,7 +1149,17 @@ a:hover {
 /* Sections */
 .section {
   position: relative;
-  padding: clamp(3rem, 9vw, 6rem) 0;
+  padding: clamp(2.5rem, 8vw, 6rem) 0;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: clamp(2rem, 10vw, 4.5rem) 0;
+  }
+
+  .hero-inner {
+    gap: 1.75rem;
+  }
 }
 
 /* Taller — bloque claro lavanda / papel */
@@ -1319,6 +1416,7 @@ a:hover {
   font-size: 0.82rem;
   font-weight: 600;
   padding: 0.55rem 1rem;
+  min-height: var(--tap-min);
   border-radius: var(--radius-sharp);
   border: 1px solid var(--line-strong);
   background: transparent;
@@ -1326,6 +1424,14 @@ a:hover {
   cursor: pointer;
   letter-spacing: 0.06em;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .hero-carousel-arrow {
+    width: var(--tap-min);
+    height: var(--tap-min);
+    font-size: 1.45rem;
+  }
 }
 
 .chip:hover {
@@ -1807,8 +1913,8 @@ a:hover {
 /* WhatsApp floating button */
 .fab-wa {
   position: fixed;
-  bottom: 1.35rem;
-  right: 1.35rem;
+  bottom: max(1.1rem, env(safe-area-inset-bottom, 0px) + 0.25rem);
+  right: max(1.1rem, env(safe-area-inset-right, 0px) + 0.25rem);
   z-index: 950;
   display: inline-flex;
   align-items: center;

@@ -1,0 +1,25 @@
+      <section class="section section-gallery section-page" id="galeria" aria-labelledby="obra-title">
+        <div class="container container--wide">
+          <div class="section-head section-head--gallery">
+            <div>
+              <h1 id="obra-title" class="section-title reveal reveal-up" data-i18n="gallery.title">Obra</h1>
+              <p class="section-intro obra-intro reveal reveal-up" data-i18n="collections.intro"></p>
+            </div>
+            <div class="gallery-meta reveal reveal-up">
+              <p class="gallery-hint" id="gallery-hint"></p>
+              <p class="gallery-count" aria-live="polite">
+                <span id="gallery-visible-count">0</span>
+                <span id="gallery-pieces-label" data-i18n="gallery.pieces">piezas</span>
+              </p>
+            </div>
+          </div>
+          <div class="filter-chips obra-chips reveal reveal-up" role="group" aria-label="Filtrar por línea">
+            <button type="button" class="chip is-active" data-filter="all"><span data-i18n="cat.all">Todo</span></button>
+            <button type="button" class="chip" data-filter="bordado"><span data-i18n="cat.bordado">Bordado</span></button>
+            <button type="button" class="chip" data-filter="telar"><span data-i18n="cat.telar">Telar</span></button>
+            <button type="button" class="chip" data-filter="dibujo"><span data-i18n="cat.dibujo">Papel</span></button>
+            <button type="button" class="chip" data-filter="arcilla"><span data-i18n="cat.arcilla">Volumen</span></button>
+          </div>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>

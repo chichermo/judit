@@ -28,9 +28,18 @@
       "meta.titleContact": "Contacto · Tormenta Telar",
       "meta.descInner":
         "Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica.",
+      "meta.descTaller":
+        "El atelier de Judit Lara en Lovaina: bordado, telar, dibujo en papel y piezas de volumen. Raíces chilenas, mirada europea.",
+      "meta.descLineas":
+        "Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada.",
+      "meta.descObra":
+        "Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara.",
+      "meta.descContact":
+        "Contacto, Instagram y WhatsApp. Tormenta Telar — Judit Lara, taller textil en Lovaina, Bélgica.",
       "footer.home": "Inicio",
       "lineas.hint": "Entra en la galería ya filtrada por cada línea.",
       "a11y.skip": "Saltar al contenido",
+      "a11y.breadcrumb": "Ruta de navegación",
       "a11y.menu": "Menú",
       "a11y.brandHome": "Tormenta Telar, inicio",
       "a11y.navMain": "Principal",
@@ -111,9 +120,18 @@
       "meta.titleObra": "Work · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Embroidery, loom, drawing. Leuven, Belgium.",
+      "meta.descTaller":
+        "Judit Lara’s studio in Leuven: embroidery, weaving, drawing on paper and small sculptural pieces. Chilean roots, European eye.",
+      "meta.descLineas":
+        "Browse the archive by line: embroidery, loom, paper and clay. Jump straight to the filtered gallery.",
+      "meta.descObra":
+        "Gallery of unique pieces: embroidery, weave, drawing and volume. Shipping via Judit Lara’s Etsy shop.",
+      "meta.descContact":
+        "Contact via Instagram and WhatsApp. Tormenta Telar — Judit Lara, textile studio in Leuven, Belgium.",
       "footer.home": "Home",
       "lineas.hint": "Open the gallery filtered for each line.",
       "a11y.skip": "Skip to content",
+      "a11y.breadcrumb": "Breadcrumb",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, home",
       "a11y.navMain": "Main",
@@ -194,9 +212,18 @@
       "meta.titleObra": "Werk · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Leuven, België.",
+      "meta.descTaller":
+        "Atelier van Judit Lara in Leuven: borduurwerk, weven, tekening en volume. Chileense wortels, Europese blik.",
+      "meta.descLineas":
+        "Blader per lijn: borduur, weefsel, papier en klei. Meteen naar de gefilterde galerij.",
+      "meta.descObra":
+        "Galerij met unieke stukken. Verzending via de Etsy-winkel van Judit Lara.",
+      "meta.descContact":
+        "Contact via Instagram en WhatsApp. Tormenta Telar — Judit Lara, textielatelier in Leuven.",
       "footer.home": "Home",
       "lineas.hint": "Open de galerij gefilterd per lijn.",
       "a11y.skip": "Naar inhoud",
+      "a11y.breadcrumb": "Kruimelpad",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, home",
       "a11y.navMain": "Hoofdnavigatie",
@@ -277,9 +304,18 @@
       "meta.titleObra": "Œuvres · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Louvain, Belgique.",
+      "meta.descTaller":
+        "L’atelier de Judit Lara à Louvain : broderie, tissage, dessin et petites pièces sculpturales. Racines chiliennes, regard européen.",
+      "meta.descLineas":
+        "Parcourez les lignes : broderie, tissage, papier et argile. Accès direct à la galerie filtrée.",
+      "meta.descObra":
+        "Galerie de pièces uniques. Expéditions via la boutique Etsy de Judit Lara.",
+      "meta.descContact":
+        "Contact par Instagram et WhatsApp. Tormenta Telar — Judit Lara, atelier textile à Louvain.",
       "footer.home": "Accueil",
       "lineas.hint": "Ouvrir la galerie filtrée pour chaque ligne.",
       "a11y.skip": "Aller au contenu",
+      "a11y.breadcrumb": "Fil d’Ariane",
       "a11y.menu": "Menu",
       "a11y.brandHome": "Tormenta Telar, accueil",
       "a11y.navMain": "Principal",
@@ -360,9 +396,18 @@
       "meta.titleObra": "Werk · Tormenta Telar",
       "meta.titleContact": "Kontakt · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Löwen, Belgien.",
+      "meta.descTaller":
+        "Das Atelier von Judit Lara in Löwen: Stickerei, Weben, Zeichnung und kleine Volumenarbeiten. Chilenische Wurzeln, europäischer Blick.",
+      "meta.descLineas":
+        "Nach Linien stöbern: Stickerei, Gewebe, Papier und Ton. Direkt zur gefilterten Galerie.",
+      "meta.descObra":
+        "Galerie mit Unikaten. Versand über Judit Laras Etsy-Shop.",
+      "meta.descContact":
+        "Kontakt über Instagram und WhatsApp. Tormenta Telar — Judit Lara, Textilatelier in Löwen.",
       "footer.home": "Start",
       "lineas.hint": "Galerie pro Linie gefiltert öffnen.",
       "a11y.skip": "Zum Inhalt",
+      "a11y.breadcrumb": "Navigationspfad",
       "a11y.menu": "Menü",
       "a11y.brandHome": "Tormenta Telar, Start",
       "a11y.navMain": "Hauptnavigation",
@@ -510,13 +555,33 @@
             : page === "contact"
               ? "meta.titleContact"
               : "meta.title";
-    const descKey = page === "home" ? "meta.description" : "meta.descInner";
+    const descKey =
+      page === "home"
+        ? "meta.description"
+        : page === "taller"
+          ? "meta.descTaller"
+          : page === "lineas"
+            ? "meta.descLineas"
+            : page === "obra"
+              ? "meta.descObra"
+              : page === "contact"
+                ? "meta.descContact"
+                : "meta.descInner";
 
     const titleEl = document.querySelector("title");
     if (titleEl) titleEl.textContent = t(titleKey);
 
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t(descKey));
+
+    const titleStr = t(titleKey);
+    const descStr = t(descKey);
+    document.getElementById("meta-og-title")?.setAttribute("content", titleStr);
+    document.getElementById("meta-og-desc")?.setAttribute("content", descStr);
+    document.getElementById("meta-tw-title")?.setAttribute("content", titleStr);
+    document.getElementById("meta-tw-desc")?.setAttribute("content", descStr);
+
+    document.querySelector(".breadcrumb")?.setAttribute("aria-label", t("a11y.breadcrumb"));
 
     const skip = document.querySelector(".skip-link");
     if (skip) skip.textContent = t("a11y.skip");
