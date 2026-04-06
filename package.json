@@ -4,7 +4,7 @@
   "homepage": "https://judit.vercel.app",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "start": "npx --yes serve -l 3000 .",
-    "preview": "npx --yes serve -l 3000 ."
+    "start": "npm run build && npx --yes serve -l 3000 public",
+    "preview": "npm run build && npx --yes serve -l 3000 public"
   }
 }

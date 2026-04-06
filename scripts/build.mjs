@@ -27,6 +27,11 @@ function escAttr(s) {
 
 function siteOrigin() {
   if (process.env.SITE_ORIGIN) return process.env.SITE_ORIGIN.replace(/\/$/, "");
+  const prod = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (prod) {
+    const u = prod.replace(/\/$/, "");
+    return u.startsWith("http") ? u : `https://${u}`;
+  }
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
   try {
     const pkg = JSON.parse(read("package.json"));
@@ -291,11 +296,26 @@ const pages = [
   },
 ];
 
+/** Salida para Vercel (outputDirectory: public) + raíz del repo para desarrollo local. */
+const publicDir = path.join(root, "public");
+fs.rmSync(publicDir, { recursive: true, force: true });
+fs.mkdirSync(publicDir, { recursive: true });
+
+for (const dir of ["css", "js", "Logos"]) {
+  const srcPath = path.join(root, dir);
+  if (fs.existsSync(srcPath)) {
+    fs.cpSync(srcPath, path.join(publicDir, dir), { recursive: true });
+  }
+}
+
 for (const p of pages) {
   const html = pageHtml(p);
   fs.writeFileSync(path.join(root, p.outfile), html, "utf8");
-  console.log("written", p.outfile);
+  fs.writeFileSync(path.join(publicDir, p.outfile), html, "utf8");
+  console.log("written", p.outfile, "(raíz + public/)");
 }
+
+console.log("Activos estáticos copiados en public/");
 
 if (!ORIGIN) {
   console.warn(
