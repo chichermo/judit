@@ -185,6 +185,7 @@ function pageHtml(opts) {
   let scriptsHtml;
   if (scripts === "gallery") {
     scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/gallery-local-data.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
