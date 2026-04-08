@@ -68,6 +68,7 @@
       "shop.online": "Tienda online",
       "brand.tag": "taller textil",
       "hero.kicker": "Judit Lara · Lovaina, Bélgica",
+      "hero.headline": "Tormenta Telar",
       "hero.lead":
         "textil, dibujo y color para conectar la memoria ancestral, con el imaginario pop contemporáneo.",
       "hero.title1": "Tormenta",
@@ -118,6 +119,12 @@
       "cat.telar": "Telar",
       "cat.dibujo": "Papel",
       "cat.arcilla": "Volumen",
+      "cat.dibujos": "Dibujos",
+      "cat.dibujoSinMarco": "Dibujo sin marco",
+      "cat.monstruos": "Monstruos",
+      "cat.obras": "Obras",
+      "cat.piedras": "Piedras",
+      "cat.plasticina": "Plasticina",
       "gallery.title": "Obra",
       "gallery.hintHtml":
         "Pulsa para ampliar. Teclado: <span class=\"kbd\">←</span> <span class=\"kbd\">→</span> <span class=\"kbd\">Esc</span>",
@@ -185,6 +192,7 @@
       "shop.online": "Online shop",
       "brand.tag": "textile studio",
       "hero.kicker": "Judit Lara · Leuven, Belgium",
+      "hero.headline": "Tormenta Telar",
       "hero.lead":
         "Interweaving textiles, drawing, and color to connect ancestral memory with contemporary pop imagery.",
       "hero.title1": "Tormenta",
@@ -235,6 +243,12 @@
       "cat.telar": "Weave",
       "cat.dibujo": "Paper",
       "cat.arcilla": "Volume",
+      "cat.dibujos": "Drawings",
+      "cat.dibujoSinMarco": "Unframed drawing",
+      "cat.monstruos": "Monsters",
+      "cat.obras": "Weaving",
+      "cat.piedras": "Stones",
+      "cat.plasticina": "Clay",
       "gallery.title": "Work",
       "gallery.hintHtml":
         "Tap to enlarge. Keyboard: <span class=\"kbd\">←</span> <span class=\"kbd\">→</span> <span class=\"kbd\">Esc</span>",
@@ -302,6 +316,7 @@
       "shop.online": "Webwinkel",
       "brand.tag": "textielatelier",
       "hero.kicker": "Judit Lara · Leuven, België",
+      "hero.headline": "Tormenta Telar",
       "hero.lead":
         "Textiel, tekening en kleur om voorouderlijke herinnering te verweven met eigentijdse popbeelden.",
       "hero.title1": "Tormenta",
@@ -352,6 +367,12 @@
       "cat.telar": "Weefsel",
       "cat.dibujo": "Papier",
       "cat.arcilla": "Volume",
+      "cat.dibujos": "Tekeningen",
+      "cat.dibujoSinMarco": "Tekening zonder lijst",
+      "cat.monstruos": "Monsters",
+      "cat.obras": "Weefwerk",
+      "cat.piedras": "Stenen",
+      "cat.plasticina": "Klei",
       "gallery.title": "Werk",
       "gallery.hintHtml":
         "Tik om te vergroten. Toetsenbord: <span class=\"kbd\">←</span> <span class=\"kbd\">→</span> <span class=\"kbd\">Esc</span>",
@@ -419,6 +440,7 @@
       "shop.online": "Boutique en ligne",
       "brand.tag": "atelier textile",
       "hero.kicker": "Judit Lara · Louvain, Belgique",
+      "hero.headline": "Tormenta Telar",
       "hero.lead":
         "Textile, dessin et couleur pour tisser la mémoire ancestrale avec l’imaginaire pop contemporain.",
       "hero.title1": "Tormenta",
@@ -469,6 +491,12 @@
       "cat.telar": "Tissage",
       "cat.dibujo": "Papier",
       "cat.arcilla": "Volume",
+      "cat.dibujos": "Dessins",
+      "cat.dibujoSinMarco": "Dessin sans cadre",
+      "cat.monstruos": "Monstres",
+      "cat.obras": "Tissage",
+      "cat.piedras": "Pierres",
+      "cat.plasticina": "Pâte à modeler",
       "gallery.title": "Œuvres",
       "gallery.hintHtml":
         "Appuyez pour agrandir. Clavier : <span class=\"kbd\">←</span> <span class=\"kbd\">→</span> <span class=\"kbd\">Échap</span>",
@@ -536,6 +564,7 @@
       "shop.online": "Onlineshop",
       "brand.tag": "textilatelier",
       "hero.kicker": "Judit Lara · Löwen, Belgien",
+      "hero.headline": "Tormenta Telar",
       "hero.lead":
         "Textil, Zeichnung und Farbe, um kulturelles Gedächtnis mit zeitgenössischer Pop-Imagery zu verweben.",
       "hero.title1": "Tormenta",
@@ -586,6 +615,12 @@
       "cat.telar": "Weben",
       "cat.dibujo": "Papier",
       "cat.arcilla": "Volumen",
+      "cat.dibujos": "Zeichnungen",
+      "cat.dibujoSinMarco": "Zeichnung ohne Rahmen",
+      "cat.monstruos": "Monster",
+      "cat.obras": "Weberei",
+      "cat.piedras": "Steine",
+      "cat.plasticina": "Knetmasse",
       "gallery.title": "Werk",
       "gallery.hintHtml":
         "Tippen zum Vergrößern. Tastatur: <span class=\"kbd\">←</span> <span class=\"kbd\">→</span> <span class=\"kbd\">Esc</span>",
@@ -638,6 +673,12 @@
       telar: t("cat.telar"),
       dibujo: t("cat.dibujo"),
       arcilla: t("cat.arcilla"),
+      dibujos: t("cat.dibujos"),
+      "dibujo-sin-marco": t("cat.dibujoSinMarco"),
+      monstruos: t("cat.monstruos"),
+      obras: t("cat.obras"),
+      piedras: t("cat.piedras"),
+      plasticina: t("cat.plasticina"),
     };
   }
 

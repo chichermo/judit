@@ -21,7 +21,8 @@
   const yearEl = document.getElementById("year");
   const galleryGrid = document.getElementById("gallery-grid");
 
-  const products = /** @type {Product[]} */ (window.__TT_PRODUCTS__ || []);
+  const pageGalleryLocal = page === "obra" ? window.__TT_GALLERY_LOCAL__ || [] : [];
+  const products = /** @type {Product[]} */ ([...(window.__TT_PRODUCTS__ || []), ...pageGalleryLocal]);
 
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
@@ -83,10 +84,43 @@
     return "dibujo";
   }
 
-  const enriched = products.map((p) => ({
+  const GALLERY_SECTION_KEYS = [
+    "bordado",
+    "dibujos",
+    "dibujo-sin-marco",
+    "monstruos",
+    "obras",
+    "piedras",
+    "plasticina",
+  ];
+
+  /** @param {{ category: string, name: string }} p */
+  function normalizeObraCategory(p) {
+    const c = p.category;
+    if (GALLERY_SECTION_KEYS.includes(c)) return c;
+    if (c === "telar") return "obras";
+    if (c === "dibujo") return "dibujos";
+    if (c === "arcilla") return "plasticina";
+    if (c === "bordado") return "bordado";
+    const legacy = categorize(p.name);
+    if (legacy === "bordado") return "bordado";
+    if (legacy === "telar") return "obras";
+    if (legacy === "arcilla") return "plasticina";
+    return "dibujos";
+  }
+
+  const baseEnriched = products.map((p) => ({
     ...p,
-    category: categorize(p.name),
+    category: /** @type {string} */ (p.category || categorize(p.name)),
   }));
+
+  const enriched =
+    page === "obra"
+      ? baseEnriched.map((p) => ({
+          ...p,
+          category: normalizeObraCategory(p),
+        }))
+      : baseEnriched;
 
   function categoryLabels() {
     return I18N.getCategories();
@@ -116,12 +150,18 @@
     const counterEl = document.getElementById("hero-carousel-counter");
     if (!track || !enriched.length) return;
 
-    const carouselProducts = [...enriched].sort((a, b) => {
-      const ta = a.category === "telar" ? 0 : 1;
-      const tb = b.category === "telar" ? 0 : 1;
-      if (ta !== tb) return ta - tb;
-      return 0;
-    });
+    const carouselProducts = [...enriched]
+      .filter((p) => {
+        if (p.id >= 2000) return false;
+        if (p.id >= 25 && p.id <= 43) return false;
+        return true;
+      })
+      .sort((a, b) => {
+        const ta = a.category === "telar" ? 0 : 1;
+        const tb = b.category === "telar" ? 0 : 1;
+        if (ta !== tb) return ta - tb;
+        return 0;
+      });
 
     carouselProducts.forEach((p, i) => {
       const a = document.createElement("a");
@@ -320,11 +360,14 @@
     return;
   }
 
+  const GALLERY_LEGACY_FILTERS = { telar: "obras", dibujo: "dibujos", arcilla: "plasticina" };
+
   let activeFilter = (function readFilterFromURL() {
     const q = new URLSearchParams(location.search).get("f") || new URLSearchParams(location.search).get("filter");
     if (!q || q === "all") return "all";
-    const allowed = ["bordado", "telar", "dibujo", "arcilla"];
-    return allowed.includes(q) ? q : "all";
+    const mapped = GALLERY_LEGACY_FILTERS[q] || q;
+    if (mapped === "all") return "all";
+    return GALLERY_SECTION_KEYS.includes(mapped) ? mapped : "all";
   })();
 
   let visibleItems = [];
@@ -339,55 +382,89 @@
   const lightboxPrice = document.getElementById("lightbox-price");
   const lightboxLink = document.getElementById("lightbox-link");
 
+  /** Orden fijo por carpeta del archivo; dentro de cada una, por id. */
+  function sortForGallery(a, b) {
+    const ia = GALLERY_SECTION_KEYS.indexOf(a.category);
+    const ib = GALLERY_SECTION_KEYS.indexOf(b.category);
+    if (ia !== ib) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    return a.id - b.id;
+  }
+
   function renderGallery() {
     galleryGrid.innerHTML = "";
     const labels = categoryLabels();
+    const sorted = [...enriched].sort(sortForGallery);
 
-    enriched.forEach((item, index) => {
-      const show = activeFilter === "all" || item.category === activeFilter;
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "gallery-item";
-      if (index % 8 === 0) {
-        btn.classList.add("gallery-item--featured");
-      }
-      btn.dataset.category = item.category;
-      btn.dataset.index = String(index);
-      if (!show) {
-        btn.hidden = true;
-      }
+    const bySection = new Map();
+    GALLERY_SECTION_KEYS.forEach((k) => bySection.set(k, []));
+    for (const item of sorted) {
+      const list = bySection.get(item.category);
+      if (list) list.push(item);
+      else bySection.get("dibujos").push(item);
+    }
 
-      const img = document.createElement("img");
-      img.src = item.image;
-      img.alt = item.name;
-      img.loading = "lazy";
-      img.decoding = "async";
-      img.sizes = "(max-width: 600px) 50vw, 280px";
+    for (const sectionKey of GALLERY_SECTION_KEYS) {
+      const items = bySection.get(sectionKey) || [];
+      if (!items.length) continue;
 
-      const body = document.createElement("div");
-      body.className = "gallery-item-body";
+      const sectionEl = document.createElement("section");
+      sectionEl.className = "gallery-section";
+      sectionEl.dataset.section = sectionKey;
+      sectionEl.id = `galeria-${sectionKey}`;
 
-      const title = document.createElement("p");
-      title.className = "gallery-item-title";
-      title.textContent = item.name;
+      const h2 = document.createElement("h2");
+      h2.className = "gallery-section-title";
+      h2.textContent = labels[sectionKey] || sectionKey;
 
-      const price = document.createElement("p");
-      price.className = "gallery-item-price";
-      price.textContent = formatPrice(item.price, item.currency);
+      const grid = document.createElement("div");
+      grid.className = "gallery-grid gallery-grid--section";
 
-      const tag = document.createElement("span");
-      tag.className = "gallery-item-tag";
-      tag.textContent = labels[item.category] || item.category;
+      items.forEach((item, localIndex) => {
+        const show = activeFilter === "all" || item.category === activeFilter;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "gallery-item";
+        if (localIndex % 8 === 0) {
+          btn.classList.add("gallery-item--featured");
+        }
+        btn.dataset.category = item.category;
+        if (!show) btn.hidden = true;
 
-      body.append(title, price, tag);
-      btn.append(img, body);
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.name;
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.sizes = "(max-width: 600px) 50vw, 280px";
 
-      btn.addEventListener("click", () => {
-        lastGalleryFocus = btn;
-        openLightboxForFiltered(item);
+        const body = document.createElement("div");
+        body.className = "gallery-item-body";
+
+        const title = document.createElement("p");
+        title.className = "gallery-item-title";
+        title.textContent = item.name;
+
+        const price = document.createElement("p");
+        price.className = "gallery-item-price";
+        price.textContent = formatPrice(item.price, item.currency);
+
+        const tag = document.createElement("span");
+        tag.className = "gallery-item-tag";
+        tag.textContent = labels[item.category] || item.category;
+
+        body.append(title, price, tag);
+        btn.append(img, body);
+
+        btn.addEventListener("click", () => {
+          lastGalleryFocus = btn;
+          openLightboxForFiltered(item);
+        });
+        grid.appendChild(btn);
       });
-      galleryGrid.appendChild(btn);
-    });
+
+      sectionEl.append(h2, grid);
+      galleryGrid.appendChild(sectionEl);
+    }
 
     applyFilter(activeFilter, { silent: true });
   }
@@ -402,6 +479,11 @@
     activeFilter = filter;
     document.querySelectorAll("[data-filter]").forEach((el) => {
       el.classList.toggle("is-active", el.getAttribute("data-filter") === filter);
+    });
+    document.querySelectorAll(".gallery-section").forEach((sec) => {
+      const key = sec.getAttribute("data-section");
+      const showSec = filter === "all" || key === filter;
+      sec.hidden = !showSec;
     });
     document.querySelectorAll(".gallery-item").forEach((el) => {
       const cat = el.dataset.category;
@@ -421,7 +503,7 @@
   }
 
   function filteredList() {
-    return enriched.filter((p) => activeFilter === "all" || p.category === activeFilter);
+    return [...enriched].sort(sortForGallery).filter((p) => activeFilter === "all" || p.category === activeFilter);
   }
 
   function openLightboxForFiltered(product) {
