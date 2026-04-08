@@ -3,3 +3,8 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# Carpeta local pesada del archivo de arte (solo referencia en tu máquina; no subir a git)
+Fotos/Archivo de arte-*/
+Fotos/*.zip
+_about_extract.txt

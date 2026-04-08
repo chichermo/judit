@@ -29,7 +29,7 @@
       "meta.descInner":
         "Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica.",
       "meta.descTaller":
-        "El atelier de Judit Lara en Lovaina: bordado, telar, dibujo en papel y piezas de volumen. Raíces chilenas, mirada europea.",
+        "TormentaTelar: un estudio cromático. Judit Lara en Lovaina — bordado, telar, dibujo y volumen. Raíces chilenas, mirada europea.",
       "meta.descLineas":
         "Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada.",
       "meta.descObra":
@@ -60,7 +60,7 @@
       "brand.tag": "taller textil",
       "hero.kicker": "Judit Lara · Lovaina, Bélgica",
       "hero.lead":
-        "Hilo, trama y papel: piezas únicas donde conviven el bordado, el telar y el dibujo — raíces chilenas y mirada europea.",
+        "Textil, dibujo y color para conectar la memoria ancestral con el imaginario pop contemporáneo.",
       "hero.title1": "Tormenta",
       "hero.title2": "Telar",
       "hero.ctaWork": "Ver obra",
@@ -72,12 +72,24 @@
       "marquee.b": "Tejido mapuche contemporáneo",
       "marquee.c": "Dibujo e ilustración",
       "marquee.d": "Lovaina",
-      "about.rail": "taller · obra",
-      "about.title": "Un taller entre <em>dos orillas</em>",
+      "about.rail": "atelier",
+      "about.title": "TormentaTelar: un estudio cromático",
       "about.lead":
-        "<strong>Tormenta Telar</strong> es el espacio de Judit Lara: artista textil chilena en <strong>Lovaina</strong>. Disciplinas lentas —puntada, telar, trazo— que piden tacto y tiempo.",
+        "<strong>Tormenta Telar</strong> es el espacio de Judit Lara en <strong>Lovaina</strong>: bordado, telar, dibujo y piezas de volumen. Raíces chilenas y una mirada abierta al color.",
       "about.p2":
-        "Un nombre que imagina fuerza y trama: tradición y experimentación en el mismo lienzo. Piezas para contemplar y vivir en casa.",
+        "Puntada, telar y trazo — gestos lentos que piden tacto y tiempo. Piezas para contemplar y vivir en casa.",
+      "studio.photosTitle": "El estudio",
+      "studio.photosIntro": "Un vistazo al espacio donde tejo, bordo y dibujo.",
+      "studio.kitTitle": "Kit de telar",
+      "studio.kitLead": "Ofrezco un kit para comenzar a tejer con telar de peine.",
+      "studio.kitBody":
+        "Incluye materiales y herramientas esenciales. El manual de uso está en preparación; pronto compartiré la versión definitiva.",
+      "studio.kitManualNote": "Manual de uso: próximamente.",
+      "studio.aboutTitle": "Sobre mí",
+      "studio.bio":
+        "<p>Judit Lara es artista textil entre Chile y Bélgica. Aquí puedes escribir una biografía breve en primera o tercera persona.</p><p>Añade otro párrafo con formación, residencias o líneas de investigación cuando quieras.</p>",
+      "studio.cvLink": "Descargar CV (PDF)",
+      "studio.cvPhotoLink": "Descargar retrato (JPG · para CV o prensa)",
       "pillar1.title": "Bordado",
       "pillar1.desc": "Motivos cercanos al dibujo infantil, marcos cuadrados y textura densa.",
       "pillar2.title": "Telar",
@@ -121,7 +133,7 @@
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Embroidery, loom, drawing. Leuven, Belgium.",
       "meta.descTaller":
-        "Judit Lara’s studio in Leuven: embroidery, weaving, drawing on paper and small sculptural pieces. Chilean roots, European eye.",
+        "TormentaTelar: a chromatic studio. Judit Lara in Leuven — embroidery, weaving, drawing and small sculptural work. Chilean roots, European sensibility.",
       "meta.descLineas":
         "Browse the archive by line: embroidery, loom, paper and clay. Jump straight to the filtered gallery.",
       "meta.descObra":
@@ -152,7 +164,7 @@
       "brand.tag": "textile studio",
       "hero.kicker": "Judit Lara · Leuven, Belgium",
       "hero.lead":
-        "Thread, weave and paper: one-off pieces where embroidery, loom work and drawing meet — Chilean roots, European eye.",
+        "Interweaving textiles, drawing, and color to connect ancestral memory with contemporary pop imagery.",
       "hero.title1": "Tormenta",
       "hero.title2": "Telar",
       "hero.ctaWork": "View work",
@@ -164,12 +176,24 @@
       "marquee.b": "Contemporary Mapuche weaving",
       "marquee.c": "Drawing & illustration",
       "marquee.d": "Leuven",
-      "about.rail": "studio · work",
-      "about.title": "A studio between <em>two shores</em>",
+      "about.rail": "atelier",
+      "about.title": "TormentaTelar: a chromatic studio",
       "about.lead":
-        "<strong>Tormenta Telar</strong> is Judit Lara’s space: a Chilean textile artist based in <strong>Leuven</strong>. Slow crafts — stitch, loom, line — that ask for touch and time.",
+        "<strong>Tormenta Telar</strong> is Judit Lara’s studio in <strong>Leuven</strong>: embroidery, weaving, drawing and small sculptural pieces. Chilean roots and an open, colour-driven practice.",
       "about.p2":
-        "A name that imagines force and weave: tradition and experiment sharing the same cloth. Pieces to live with.",
+        "Stitch, loom and line — slow crafts that ask for touch and time. Pieces to live with.",
+      "studio.photosTitle": "The studio",
+      "studio.photosIntro": "A glimpse of the space where I weave, embroider and draw.",
+      "studio.kitTitle": "Loom kit",
+      "studio.kitLead": "I offer a kit to get started with a comb loom.",
+      "studio.kitBody":
+        "It includes essential materials and tools. The how-to manual is still being finished; the final version will be shared soon.",
+      "studio.kitManualNote": "User manual: coming soon.",
+      "studio.aboutTitle": "About me",
+      "studio.bio":
+        "<p>Judit Lara is a textile artist working between Chile and Belgium. Add your short bio here (first or third person).</p><p>You can add training, residencies or research lines in a second paragraph.</p>",
+      "studio.cvLink": "Download CV (PDF)",
+      "studio.cvPhotoLink": "Download portrait (JPG · for CV or press)",
       "pillar1.title": "Embroidery",
       "pillar1.desc": "Motifs close to childlike drawing, square frames, rich texture.",
       "pillar2.title": "Weaving",
@@ -213,7 +237,7 @@
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Leuven, België.",
       "meta.descTaller":
-        "Atelier van Judit Lara in Leuven: borduurwerk, weven, tekening en volume. Chileense wortels, Europese blik.",
+        "TormentaTelar: een chromatische studio. Judit Lara in Leuven — borduurwerk, weven, tekening en volume. Chileense wortels, Europese blik.",
       "meta.descLineas":
         "Blader per lijn: borduur, weefsel, papier en klei. Meteen naar de gefilterde galerij.",
       "meta.descObra":
@@ -244,7 +268,7 @@
       "brand.tag": "textielatelier",
       "hero.kicker": "Judit Lara · Leuven, België",
       "hero.lead":
-        "Draad, binding en papier: unieke stukken waarin borduurwerk, weefgetouw en tekening samenkomen — wortels in Chili, blik in Europa.",
+        "Textiel, tekening en kleur om voorouderlijke herinnering te verweven met eigentijdse popbeelden.",
       "hero.title1": "Tormenta",
       "hero.title2": "Telar",
       "hero.ctaWork": "Bekijk werk",
@@ -256,12 +280,24 @@
       "marquee.b": "Hedendaags Mapuche-weefsel",
       "marquee.c": "Tekening en illustratie",
       "marquee.d": "Leuven",
-      "about.rail": "atelier · werk",
-      "about.title": "Een atelier tussen <em>twee oevers</em>",
+      "about.rail": "atelier",
+      "about.title": "TormentaTelar: een chromatische studio",
       "about.lead":
-        "<strong>Tormenta Telar</strong> is de werkplek van Judit Lara: Chileens textielkunstenares in <strong>Leuven</strong>. Trage ambachten — steek, weefgetouw, lijn — die tijd en aanraking vragen.",
+        "<strong>Tormenta Telar</strong> is het atelier van Judit Lara in <strong>Leuven</strong>: borduurwerk, weven, tekening en kleine volumewerken. Chileense wortels en een kleurrijke blik.",
       "about.p2":
-        "Een naam die kracht en weefsel voor ogen roept: traditie en experiment op hetzelfde vlak. Stukken om mee te leven.",
+        "Steek, weefgetouw en lijn — trage ambachten die tijd en aanraking vragen. Stukken om mee te leven.",
+      "studio.photosTitle": "Het atelier",
+      "studio.photosIntro": "Een blik op de plek waar ik weef, borduur en teken.",
+      "studio.kitTitle": "Weefkit",
+      "studio.kitLead": "Ik bied een kit om te starten met een kam-weeftoestel.",
+      "studio.kitBody":
+        "Met essentiële materialen en gereedschap. De gebruiksaanwijzing is nog in voorbereiding; de definitieve versie volgt binnenkort.",
+      "studio.kitManualNote": "Handleiding: binnenkort beschikbaar.",
+      "studio.aboutTitle": "Over mij",
+      "studio.bio":
+        "<p>Judit Lara is textielkunstenares tussen Chili en België. Vul hier je korte bio aan.</p><p>Voeg desgewenst een tweede alinea toe over opleiding of focus.</p>",
+      "studio.cvLink": "CV downloaden (PDF)",
+      "studio.cvPhotoLink": "Portret downloaden (JPG · voor CV of pers)",
       "pillar1.title": "Borduurwerk",
       "pillar1.desc": "Motieven dicht bij kinderlijke tekening, vierkante kaders, rijke textuur.",
       "pillar2.title": "Weven",
@@ -305,7 +341,7 @@
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Louvain, Belgique.",
       "meta.descTaller":
-        "L’atelier de Judit Lara à Louvain : broderie, tissage, dessin et petites pièces sculpturales. Racines chiliennes, regard européen.",
+        "TormentaTelar : un atelier chromatique. Judit Lara à Louvain — broderie, tissage, dessin et volume. Racines chiliennes, regard européen.",
       "meta.descLineas":
         "Parcourez les lignes : broderie, tissage, papier et argile. Accès direct à la galerie filtrée.",
       "meta.descObra":
@@ -336,7 +372,7 @@
       "brand.tag": "atelier textile",
       "hero.kicker": "Judit Lara · Louvain, Belgique",
       "hero.lead":
-        "Fil, chaîne et papier : pièces uniques où se rencontrent broderie, métier à tisser et dessin — racines chiliennes, regard européen.",
+        "Textile, dessin et couleur pour tisser la mémoire ancestrale avec l’imaginaire pop contemporain.",
       "hero.title1": "Tormenta",
       "hero.title2": "Telar",
       "hero.ctaWork": "Voir les œuvres",
@@ -348,12 +384,24 @@
       "marquee.b": "Tissage mapuche contemporain",
       "marquee.c": "Dessin et illustration",
       "marquee.d": "Louvain",
-      "about.rail": "atelier · œuvre",
-      "about.title": "Un atelier entre <em>deux rives</em>",
+      "about.rail": "atelier",
+      "about.title": "TormentaTelar : un atelier chromatique",
       "about.lead":
-        "<strong>Tormenta Telar</strong> est l’espace de Judit Lara : artiste textile chilienne à <strong>Louvain</strong>. Des gestes lents — point, métier, trait — qui demandent le toucher et le temps.",
+        "<strong>Tormenta Telar</strong> est l’atelier de Judit Lara à <strong>Louvain</strong> : broderie, tissage, dessin et petites pièces de volume. Racines chiliennes et regard tourné vers la couleur.",
       "about.p2":
-        "Un nom qui imagine la force et la trame : tradition et expérimentation sur la même toile. Des pièces pour habiter le quotidien.",
+        "Point, métier à tisser et trait — gestes lents qui demandent le toucher et le temps. Des pièces pour habiter le quotidien.",
+      "studio.photosTitle": "L’atelier",
+      "studio.photosIntro": "Un aperçu de l’espace où je tisse, brode et dessine.",
+      "studio.kitTitle": "Kit de tissage",
+      "studio.kitLead": "Je propose un kit pour débuter avec un métier à peigne.",
+      "studio.kitBody":
+        "Il comprend le matériel et les outils essentiels. Le mode d’emploi est en cours de finalisation ; la version définitive arrive bientôt.",
+      "studio.kitManualNote": "Mode d’emploi : bientôt disponible.",
+      "studio.aboutTitle": "À propos",
+      "studio.bio":
+        "<p>Judit Lara est artiste textile entre le Chili et la Belgique. Ajoutez ici votre courte biographie.</p><p>Un second paragraphe pour formation ou axes de travail, si vous le souhaitez.</p>",
+      "studio.cvLink": "Télécharger le CV (PDF)",
+      "studio.cvPhotoLink": "Télécharger le portrait (JPG · CV ou presse)",
       "pillar1.title": "Broderie",
       "pillar1.desc": "Motifs proches du dessin enfantin, cadres carrés, matière dense.",
       "pillar2.title": "Tissage",
@@ -397,7 +445,7 @@
       "meta.titleContact": "Kontakt · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Löwen, Belgien.",
       "meta.descTaller":
-        "Das Atelier von Judit Lara in Löwen: Stickerei, Weben, Zeichnung und kleine Volumenarbeiten. Chilenische Wurzeln, europäischer Blick.",
+        "TormentaTelar: ein chromatisches Atelier. Judit Lara in Löwen — Stickerei, Weben, Zeichnung und Volumenarbeiten. Chilenische Wurzeln, europäischer Blick.",
       "meta.descLineas":
         "Nach Linien stöbern: Stickerei, Gewebe, Papier und Ton. Direkt zur gefilterten Galerie.",
       "meta.descObra":
@@ -428,7 +476,7 @@
       "brand.tag": "textilatelier",
       "hero.kicker": "Judit Lara · Löwen, Belgien",
       "hero.lead":
-        "Faden, Bindung und Papier: Unikate, in denen Stickerei, Webstuhl und Zeichnung zusammentreffen — chilenische Wurzeln, europäischer Blick.",
+        "Textil, Zeichnung und Farbe, um kulturelles Gedächtnis mit zeitgenössischer Pop-Imagery zu verweben.",
       "hero.title1": "Tormenta",
       "hero.title2": "Telar",
       "hero.ctaWork": "Werk ansehen",
@@ -440,12 +488,24 @@
       "marquee.b": "Zeitgenössisches Mapuche-Weben",
       "marquee.c": "Zeichnung und Illustration",
       "marquee.d": "Löwen",
-      "about.rail": "atelier · werk",
-      "about.title": "Ein Atelier zwischen <em>zwei Ufern</em>",
+      "about.rail": "atelier",
+      "about.title": "TormentaTelar: ein chromatisches Atelier",
       "about.lead":
-        "<strong>Tormenta Telar</strong> ist Judit Laras Raum: chilenische Textilkünstlerin in <strong>Löwen</strong>. Langsame Handwerke — Stich, Webstuhl, Linie — die Berührung und Zeit brauchen.",
+        "<strong>Tormenta Telar</strong> ist Judit Laras Atelier in <strong>Löwen</strong>: Stickerei, Weben, Zeichnung und kleine Volumenarbeiten. Chilenische Wurzeln und eine offene, farbige Praxis.",
       "about.p2":
-        "Ein Name, der Kraft und Gewebe vor Augen führt: Tradition und Experiment auf derselben Fläche. Stücke zum Wohnen.",
+        "Stich, Webstuhl und Linie — langsame Handwerke, die Berührung und Zeit brauchen. Stücke zum Wohnen.",
+      "studio.photosTitle": "Das Atelier",
+      "studio.photosIntro": "Ein Einblick in den Raum, in dem ich webe, stickere und zeichne.",
+      "studio.kitTitle": "Webset",
+      "studio.kitLead": "Ich biete ein Set an, um mit einem Kammwebstuhl einzusteigen.",
+      "studio.kitBody":
+        "Mit wichtigem Material und Werkzeug. Die Bedienungsanleitung ist in Arbeit; die endgültige Version folgt in Kürze.",
+      "studio.kitManualNote": "Bedienungsanleitung: demnächst.",
+      "studio.aboutTitle": "Über mich",
+      "studio.bio":
+        "<p>Judit Lara ist Textilkünstlerin zwischen Chile und Belgien. Hier können Sie eine kurze Biografie einfügen.</p><p>Optional ein zweiter Absatz zu Ausbildung oder Schwerpunkten.</p>",
+      "studio.cvLink": "CV herunterladen (PDF)",
+      "studio.cvPhotoLink": "Porträt herunterladen (JPG · für CV oder Presse)",
       "pillar1.title": "Stickerei",
       "pillar1.desc": "Motive nahe kindlicher Zeichnung, quadratische Rahmen, dichte Textur.",
       "pillar2.title": "Weben",
@@ -480,6 +540,16 @@
       "lightbox.detail": "Details & Kauf →",
     },
   };
+
+  const BIO =
+    typeof window !== "undefined" && window.TT_STUDIO_BIO ? window.TT_STUDIO_BIO : null;
+  if (BIO) {
+    if (BIO.es) STRINGS.es["studio.bio"] = BIO.es;
+    if (BIO.en) STRINGS.en["studio.bio"] = BIO.en;
+    if (BIO.nl) STRINGS.nl["studio.bio"] = BIO.nl;
+    if (BIO.fr) STRINGS.fr["studio.bio"] = BIO.fr;
+    if (BIO.de) STRINGS.de["studio.bio"] = BIO.de;
+  }
 
   function normalizeLang(code) {
     const c = (code || "").split("-")[0].toLowerCase();

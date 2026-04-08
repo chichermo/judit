@@ -51,7 +51,7 @@ function absUrl(pathname) {
 
 function headBlock({ title, description, path: pathname, ogImage }) {
   const canonical = absUrl(pathname);
-  const imagePath = ogImage || "/Logos/logo-principal.png";
+  const imagePath = ogImage || "/Logos/logo-marca.png";
   const ogImageUrl = absUrl(imagePath);
   const lines = [
     `    <title>${escAttr(title)}</title>`,
@@ -174,15 +174,18 @@ function pageHtml(opts) {
 
   let scriptsHtml;
   if (scripts === "gallery") {
-    scriptsHtml = `    <script src="js/products-data.js"></script>
+    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/products-data.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else if (scripts === "home") {
-    scriptsHtml = `    <script src="js/products-data.js"></script>
+    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/products-data.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else {
-    scriptsHtml = `    <script src="js/i18n.js"></script>
+    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   }
 
@@ -301,7 +304,7 @@ const publicDir = path.join(root, "public");
 fs.rmSync(publicDir, { recursive: true, force: true });
 fs.mkdirSync(publicDir, { recursive: true });
 
-for (const dir of ["css", "js", "Logos"]) {
+for (const dir of ["css", "js", "Logos", "Fotos", "assets"]) {
   const srcPath = path.join(root, dir);
   if (fs.existsSync(srcPath)) {
     fs.cpSync(srcPath, path.join(publicDir, dir), { recursive: true });

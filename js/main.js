@@ -112,7 +112,14 @@
     const counterEl = document.getElementById("hero-carousel-counter");
     if (!track || !enriched.length) return;
 
-    enriched.forEach((p, i) => {
+    const carouselProducts = [...enriched].sort((a, b) => {
+      const ta = a.category === "telar" ? 0 : 1;
+      const tb = b.category === "telar" ? 0 : 1;
+      if (ta !== tb) return ta - tb;
+      return 0;
+    });
+
+    carouselProducts.forEach((p, i) => {
       const a = document.createElement("a");
       a.className = "hero-carousel-slide";
       a.href = p.url;
