@@ -103,7 +103,6 @@
             <li><a href="sobre-mi.html" data-nav data-i18n="nav.about">Acerca de mí</a></li>
             <li><a href="lineas.html" data-nav data-i18n="nav.lines">Líneas</a></li>
             <li><a href="obra.html" data-nav data-i18n="nav.work">Obra</a></li>
-            <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -240,9 +239,18 @@
               <span data-i18n="footer.ig">Instagram</span></a
             >
           </li>
+          <li>
+            <a href="contacto.html" class="footer-contact-link" data-nav data-i18n="nav.contact">Contacto</a>
+          </li>
           <li><a href="index.html" data-i18n="footer.home">Inicio</a></li>
           <li><a href="#top" data-i18n="footer.top">Arriba</a></li>
         </ul>
+      </div>
+      <div class="container footer-meta">
+        <p class="footer-visits muted">
+          <span data-i18n="footer.visits">Visitas</span><span class="footer-visits-sep" aria-hidden="true">:</span>
+          <strong class="footer-visits-value" id="footer-visit-count" aria-live="polite">—</strong>
+        </p>
       </div>
     </footer>
 
@@ -265,6 +273,7 @@
 
 
     <script src="js/studio-bio.js"></script>
+    <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
   </body>

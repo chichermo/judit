@@ -113,7 +113,7 @@ const fabBlock = `    <a
 `;
 
 function navPlaceholders(active) {
-  const keys = ["HOME", "STUDIO", "KIT", "ABOUT", "LINES", "WORK", "CONTACT"];
+  const keys = ["HOME", "STUDIO", "KIT", "ABOUT", "LINES", "WORK"];
   const map = Object.fromEntries(keys.map((k) => [`__NAV_${k}__`, ""]));
   const up = active.toUpperCase();
   if (map[`__NAV_${up}__`] !== undefined) map[`__NAV_${up}__`] = ' aria-current="page"';
@@ -186,15 +186,18 @@ function pageHtml(opts) {
   if (scripts === "gallery") {
     scriptsHtml = `    <script src="js/studio-bio.js"></script>
     <script src="js/products-data.js"></script>
+    <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else if (scripts === "home") {
     scriptsHtml = `    <script src="js/studio-bio.js"></script>
     <script src="js/products-data.js"></script>
+    <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else {
     scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   }

@@ -27,6 +27,10 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  if (page === "contact") {
+    document.querySelector("a.footer-contact-link")?.setAttribute("aria-current", "page");
+  }
+
   navToggle?.addEventListener("click", () => {
     const expanded = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!expanded));

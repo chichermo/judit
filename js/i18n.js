@@ -133,6 +133,7 @@
       "contact.waBtn": "WhatsApp",
       "footer.top": "Arriba",
       "footer.ig": "Instagram",
+      "footer.visits": "Visitas",
       "lightbox.detail": "Ficha completa →",
     },
     en: {
@@ -249,6 +250,7 @@
       "contact.waBtn": "WhatsApp",
       "footer.top": "Top",
       "footer.ig": "Instagram",
+      "footer.visits": "Visits",
       "lightbox.detail": "Full details →",
     },
     nl: {
@@ -365,6 +367,7 @@
       "contact.waBtn": "WhatsApp",
       "footer.top": "Boven",
       "footer.ig": "Instagram",
+      "footer.visits": "Bezoeken",
       "lightbox.detail": "Volledige fiche →",
     },
     fr: {
@@ -481,6 +484,7 @@
       "contact.waBtn": "WhatsApp",
       "footer.top": "Haut",
       "footer.ig": "Instagram",
+      "footer.visits": "Visites",
       "lightbox.detail": "Fiche complète →",
     },
     de: {
@@ -597,6 +601,7 @@
       "contact.waBtn": "WhatsApp",
       "footer.top": "Nach oben",
       "footer.ig": "Instagram",
+      "footer.visits": "Aufrufe",
       "lightbox.detail": "Details & Kauf →",
     },
   };
