@@ -354,6 +354,77 @@ a:hover {
   padding-block: 0.45rem;
 }
 
+@media (max-width: 840px) {
+  .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.5rem;
+    min-height: 0;
+    padding-block: 0.38rem;
+  }
+
+  .brand {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .header-tools {
+    order: 2;
+    flex: 0 1 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    width: auto;
+  }
+
+  .nav-toggle {
+    order: 3;
+    flex: 0 0 44px;
+  }
+
+  .site-nav {
+    order: 4;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-tag {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 1.12rem;
+    letter-spacing: 0.03em;
+  }
+
+  .brand {
+    gap: 0.6rem;
+  }
+
+  .brand-mark-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .shop-pill {
+    padding: 0.38rem 0.72rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .lang-select {
+    font-size: 0.68rem;
+    padding: 0.34rem 0.5rem;
+    max-width: 118px;
+  }
+}
+
 .brand {
   grid-column: 1;
   grid-row: 1;
@@ -586,15 +657,12 @@ a:hover {
     text-align: left;
     font-size: 1rem;
   }
-}
 
-@media (max-width: 840px) {
   .nav-toggle {
     display: flex;
   }
 
   .site-nav {
-    justify-self: stretch;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
@@ -689,6 +757,15 @@ a:hover {
   transform: translate3d(var(--px, 0), var(--py, 0), 0);
   will-change: transform;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  box-sizing: border-box;
+}
+
+@media (max-width: 899px) {
+  .hero-inner {
+    width: 100%;
+    max-width: 1280px;
+    padding-inline: clamp(0.45rem, 1.85vw + 0.2rem, 1.05rem);
+  }
 }
 
 @media (min-width: 900px) {
@@ -733,6 +810,15 @@ a:hover {
   color: var(--text);
   margin: 0 0 1.25rem;
   font-weight: 600;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .hero-kicker {
+    letter-spacing: 0.14em;
+    font-size: 0.74rem;
+    line-height: 1.45;
+  }
 }
 
 .hero h1 {
@@ -742,20 +828,42 @@ a:hover {
 
 .hero-title-full {
   font-family: var(--font-hero-title);
-  font-size: clamp(1.35rem, 3.8vw + 0.35rem, 2.75rem);
+  font-size: clamp(1.2rem, 3.4vw + 0.45rem, 2.75rem);
   font-weight: 500;
   color: var(--wordmark-ink);
-  letter-spacing: 0.04em;
-  line-height: 1.16;
+  letter-spacing: 0.035em;
+  line-height: 1.18;
   max-width: 100%;
-  text-wrap: balance;
-  overflow-wrap: anywhere;
   text-transform: lowercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.28em;
+  row-gap: 0.06em;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero-title-brand {
+  flex: 0 1 auto;
+  white-space: nowrap;
+}
+
+.hero-title-rest {
+  flex: 1 1 12rem;
+  min-width: min(100%, 11rem);
+}
+
+@media (max-width: 360px) {
+  .hero-title-brand {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 900px) {
   .hero-title-full {
-    max-width: min(100%, 20rem);
+    max-width: min(100%, 22rem);
+    column-gap: 0.32em;
   }
 }
 
@@ -781,6 +889,12 @@ a:hover {
   font-size: clamp(1rem, 2.8vw, 1.08rem);
   color: var(--text-body);
   font-weight: 400;
+}
+
+@media (max-width: 899px) {
+  .hero-lead {
+    max-width: 100%;
+  }
 }
 
 .hero-actions {
