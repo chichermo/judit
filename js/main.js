@@ -143,7 +143,8 @@
     const n = slides.length;
     let index = 0;
     const maxDots = 12;
-    const autoplayMs = 5000;
+    const autoplayMs = 5500;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (n <= 1) {
       if (prevBtn) prevBtn.hidden = true;
@@ -216,7 +217,7 @@
 
     let autoplayId = 0;
     function startAutoplay() {
-      if (n <= 1) return;
+      if (n <= 1 || reduceMotion) return;
       stopAutoplay();
       autoplayId = window.setInterval(() => go(1), autoplayMs);
     }
@@ -231,11 +232,12 @@
       startAutoplay();
     }
 
-    root?.addEventListener("mouseenter", stopAutoplay);
-    root?.addEventListener("mouseleave", startAutoplay);
+    /* Autoplay continuo: no pausar al pasar el ratón por el carrusel (solo controles manuales y a11y). */
     root?.addEventListener("focusin", stopAutoplay);
     root?.addEventListener("focusout", () => {
-      if (root && !root.contains(document.activeElement)) startAutoplay();
+      requestAnimationFrame(() => {
+        if (root && !root.contains(document.activeElement) && !document.hidden) startAutoplay();
+      });
     });
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) stopAutoplay();

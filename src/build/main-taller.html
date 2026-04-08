@@ -1,37 +1,48 @@
-      <section class="section page-taller section-page" id="taller" aria-labelledby="taller-title">
-        <div class="about-layout container">
-          <div class="about-rail reveal reveal-fade">
-            <span class="about-rail-text" data-i18n="about.rail">atelier</span>
-          </div>
-          <div class="about-body">
+      <p class="visually-hidden" id="taller-subnav-heading" data-i18n="a11y.tallerSubnav">
+        Secciones de esta página
+      </p>
+      <nav class="taller-subnav container reveal reveal-up" aria-labelledby="taller-subnav-heading">
+        <ul class="taller-subnav-list">
+          <li><a class="taller-subnav-link" href="#taller" data-nav data-i18n="studio.subnavIntro">Presentación</a></li>
+          <li><a class="taller-subnav-link" href="#estudio" data-nav data-i18n="studio.photosTitle">El estudio</a></li>
+          <li><a class="taller-subnav-link" href="#kit-telar" data-nav data-i18n="studio.kitTitle">Kit de telar</a></li>
+          <li><a class="taller-subnav-link" href="#sobre-mi" data-nav data-i18n="studio.aboutTitle">Sobre mí</a></li>
+        </ul>
+      </nav>
+
+      <section class="section page-taller section-page taller-anchor" id="taller" aria-labelledby="taller-title">
+        <div class="container taller-intro-split">
+          <div class="taller-intro-copy">
             <h1 id="taller-title" class="section-title reveal reveal-up" data-i18n="about.title">
               TormentaTelar: un estudio cromático
             </h1>
             <p class="lead section-lead reveal reveal-up" data-i18n-html="about.lead"></p>
             <p class="reveal reveal-up" data-i18n="about.p2"></p>
-            <ul class="pillar-list">
-              <li class="reveal reveal-up">
+          </div>
+          <div class="taller-intro-pillars">
+            <ul class="pillar-list pillar-list--grid reveal reveal-up">
+              <li>
                 <span class="pillar-num">01</span>
                 <div>
                   <strong data-i18n="pillar1.title">Bordado</strong>
                   <p data-i18n="pillar1.desc"></p>
                 </div>
               </li>
-              <li class="reveal reveal-up">
+              <li>
                 <span class="pillar-num">02</span>
                 <div>
                   <strong data-i18n="pillar2.title">Telar</strong>
                   <p data-i18n="pillar2.desc"></p>
                 </div>
               </li>
-              <li class="reveal reveal-up">
+              <li>
                 <span class="pillar-num">03</span>
                 <div>
                   <strong data-i18n="pillar3.title">Papel</strong>
                   <p data-i18n="pillar3.desc"></p>
                 </div>
               </li>
-              <li class="reveal reveal-up">
+              <li>
                 <span class="pillar-num">04</span>
                 <div>
                   <strong data-i18n="pillar4.title">Volumen</strong>
@@ -43,49 +54,56 @@
         </div>
       </section>
 
-      <section class="section section-page section-studio-photos" id="estudio" aria-labelledby="studio-photos-title">
-        <div class="container">
-          <h2 id="studio-photos-title" class="section-title subsection-title reveal reveal-up" data-i18n="studio.photosTitle">
-            El estudio
-          </h2>
-          <p class="section-intro reveal reveal-up" data-i18n="studio.photosIntro"></p>
-          <div class="studio-grid reveal reveal-up">
-            <figure class="studio-shot">
-              <img src="Fotos/estudio-01.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-            <figure class="studio-shot">
-              <img src="Fotos/estudio-02.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-            <figure class="studio-shot">
-              <img src="Fotos/estudio-03.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-            <figure class="studio-shot">
-              <img src="Fotos/estudio-04.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-          </div>
+      <section class="section section-page section-taller-dual">
+        <div class="container taller-dual-grid">
+          <article id="estudio" class="taller-dual-card taller-anchor reveal reveal-up" aria-labelledby="studio-photos-title">
+            <h2 id="studio-photos-title" class="section-title subsection-title" data-i18n="studio.photosTitle">
+              El estudio
+            </h2>
+            <p class="section-intro" data-i18n="studio.photosIntro"></p>
+            <div class="studio-grid studio-grid--paired studio-grid--gemini">
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-01.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-02.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-03.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-04.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-05.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-06.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/telares/gemini-07.png" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+            </div>
+          </article>
+
+          <article id="kit-telar" class="taller-dual-card taller-anchor reveal reveal-up" aria-labelledby="kit-title">
+            <h2 id="kit-title" class="section-title subsection-title" data-i18n="studio.kitTitle">Kit de telar</h2>
+            <p class="lead section-lead" data-i18n="studio.kitLead"></p>
+            <p data-i18n="studio.kitBody"></p>
+            <div class="studio-grid studio-grid--paired studio-grid--kit">
+              <figure class="studio-shot">
+                <img src="Fotos/kit-telar-01.svg" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+              <figure class="studio-shot">
+                <img src="Fotos/kit-telar-02.svg" alt="" loading="lazy" width="800" height="600" />
+              </figure>
+            </div>
+            <p class="kit-manual-note muted" data-i18n="studio.kitManualNote"></p>
+          </article>
         </div>
       </section>
 
-      <section class="section section-page section-loom-kit" id="kit-telar" aria-labelledby="kit-title">
-        <div class="container">
-          <h2 id="kit-title" class="section-title subsection-title reveal reveal-up" data-i18n="studio.kitTitle">
-            Kit de telar
-          </h2>
-          <p class="lead section-lead reveal reveal-up" data-i18n="studio.kitLead"></p>
-          <p class="reveal reveal-up" data-i18n="studio.kitBody"></p>
-          <div class="studio-grid studio-grid--kit reveal reveal-up">
-            <figure class="studio-shot">
-              <img src="Fotos/kit-telar-01.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-            <figure class="studio-shot">
-              <img src="Fotos/kit-telar-02.svg" alt="" loading="lazy" width="800" height="600" />
-            </figure>
-          </div>
-          <p class="kit-manual-note muted reveal reveal-up" data-i18n="studio.kitManualNote"></p>
-        </div>
-      </section>
-
-      <section class="section section-page section-about-me" id="sobre-mi" aria-labelledby="about-me-title">
+      <section class="section section-page section-about-me taller-anchor" id="sobre-mi" aria-labelledby="about-me-title">
         <div class="container about-me-layout">
           <figure class="about-me-photo reveal reveal-up">
             <img src="Fotos/judit-retrato.jpg" alt="" loading="lazy" width="640" height="800" />

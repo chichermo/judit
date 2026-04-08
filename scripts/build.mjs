@@ -240,7 +240,7 @@ const pages = [
   {
     outfile: "taller.html",
     bodyAttrs: ' class="page-sub" data-page="taller"',
-    headTitle: "Taller · Tormenta Telar",
+    headTitle: "Acerca de mí y mi taller · Tormenta Telar",
     headDesc:
       "El atelier de Judit Lara en Lovaina: bordado, telar, dibujo en papel y piezas de volumen. Raíces chilenas, mirada europea.",
     path: "/taller.html",
