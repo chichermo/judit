@@ -22,14 +22,20 @@
       "meta.title": "Tormenta Telar — Arte textil y dibujo · Judit Lara",
       "meta.description":
         "Taller de Judit Lara en Lovaina: bordado, telar, dibujo e ilustración. Arte textil entre Chile y Europa.",
-      "meta.titleTaller": "Acerca de mí y mi taller · Tormenta Telar",
+      "meta.titleTaller": "Taller · Tormenta Telar",
+      "meta.titleKit": "Kit de telar · Tormenta Telar",
+      "meta.titleAbout": "Acerca de mí · Tormenta Telar",
       "meta.titleLineas": "Líneas de trabajo · Tormenta Telar",
       "meta.titleObra": "Obra · Tormenta Telar",
       "meta.titleContact": "Contacto · Tormenta Telar",
       "meta.descInner":
         "Tormenta Telar — Judit Lara. Bordado, telar y dibujo. Lovaina, Bélgica.",
       "meta.descTaller":
-        "TormentaTelar: un estudio cromático. Judit Lara en Lovaina — bordado, telar, dibujo y volumen. Raíces chilenas, mirada europea.",
+        "Presentación del taller Tormenta Telar en Lovaina: líneas de trabajo y el espacio donde tejo, bordo y dibujo.",
+      "meta.descKit":
+        "Kit para empezar con telar de peine: materiales esenciales, fotos del contenido y nota sobre el manual de uso.",
+      "meta.descAbout":
+        "Biografía y trayectoria de Judit Lara — artista textil entre Chile y Europa. CV y retrato descargables.",
       "meta.descLineas":
         "Explora el archivo por líneas: bordado, telar, papel y arcilla. Acceso directo a la galería filtrada.",
       "meta.descObra":
@@ -53,7 +59,9 @@
       "a11y.wa": "Contactar por WhatsApp",
       "wa.label": "WhatsApp",
       "nav.home": "Inicio",
-      "nav.studio": "Acerca de mí y mi taller",
+      "nav.studio": "Taller",
+      "nav.kit": "Kit de telar",
+      "nav.about": "Acerca de mí",
       "nav.lines": "Líneas",
       "nav.work": "Obra",
       "nav.contact": "Contacto",
@@ -89,7 +97,7 @@
       "studio.kitBody":
         "Incluye materiales y herramientas esenciales. El manual de uso está en preparación; pronto compartiré la versión definitiva.",
       "studio.kitManualNote": "Manual de uso: próximamente.",
-      "studio.aboutTitle": "Sobre mí",
+      "studio.aboutTitle": "Acerca de mí",
       "studio.bio":
         "<p>Judit Lara es artista textil entre Chile y Bélgica. Aquí puedes escribir una biografía breve en primera o tercera persona.</p><p>Añade otro párrafo con formación, residencias o líneas de investigación cuando quieras.</p>",
       "studio.cvLink": "Descargar CV (PDF)",
@@ -131,13 +139,19 @@
       "meta.title": "Tormenta Telar — Textile art & drawing · Judit Lara",
       "meta.description":
         "Judit Lara’s studio in Leuven: embroidery, weaving, drawing and illustration. Contemporary textile work between Chile and Europe.",
-      "meta.titleTaller": "About me & my studio · Tormenta Telar",
+      "meta.titleTaller": "Studio · Tormenta Telar",
+      "meta.titleKit": "Loom kit · Tormenta Telar",
+      "meta.titleAbout": "About me · Tormenta Telar",
       "meta.titleLineas": "Lines of work · Tormenta Telar",
       "meta.titleObra": "Work · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Embroidery, loom, drawing. Leuven, Belgium.",
       "meta.descTaller":
-        "TormentaTelar: a chromatic studio. Judit Lara in Leuven — embroidery, weaving, drawing and small sculptural work. Chilean roots, European sensibility.",
+        "Introducing the Tormenta Telar studio in Leuven: lines of work and the space where I weave, embroider and draw.",
+      "meta.descKit":
+        "Comb-loom starter kit: essential materials, photos of what’s inside, and a note on the user manual.",
+      "meta.descAbout":
+        "Biography and path of Judit Lara — textile artist between Chile and Europe. Downloadable CV and portrait.",
       "meta.descLineas":
         "Browse the archive by line: embroidery, loom, paper and clay. Jump straight to the filtered gallery.",
       "meta.descObra":
@@ -161,7 +175,9 @@
       "a11y.wa": "Contact on WhatsApp",
       "wa.label": "WhatsApp",
       "nav.home": "Home",
-      "nav.studio": "About me & my studio",
+      "nav.studio": "Studio",
+      "nav.kit": "Loom kit",
+      "nav.about": "About me",
       "nav.lines": "Lines",
       "nav.work": "Work",
       "nav.contact": "Contact",
@@ -239,13 +255,19 @@
       "meta.title": "Tormenta Telar — Textielkunst en tekening · Judit Lara",
       "meta.description":
         "Atelier van Judit Lara in Leuven: borduurwerk, weven, tekening en illustratie. Hedendaagse textiel tussen Chili en Europa.",
-      "meta.titleTaller": "Over mij en mijn atelier · Tormenta Telar",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleKit": "Weefkit · Tormenta Telar",
+      "meta.titleAbout": "Over mij · Tormenta Telar",
       "meta.titleLineas": "Werklijnen · Tormenta Telar",
       "meta.titleObra": "Werk · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Leuven, België.",
       "meta.descTaller":
-        "TormentaTelar: een chromatische studio. Judit Lara in Leuven — borduurwerk, weven, tekening en volume. Chileense wortels, Europese blik.",
+        "Voorstelling van het atelier Tormenta Telar in Leuven: werklijnen en de plek waar ik weef, borduur en teken.",
+      "meta.descKit":
+        "Startset voor een kam-weeftoestel: essentiële materialen, foto’s van de inhoud en een woord over de handleiding.",
+      "meta.descAbout":
+        "Biografie en loopbaan van Judit Lara — textielkunstenares tussen Chili en Europa. CV en portret om te downloaden.",
       "meta.descLineas":
         "Blader per lijn: borduur, weefsel, papier en klei. Meteen naar de gefilterde galerij.",
       "meta.descObra":
@@ -269,7 +291,9 @@
       "a11y.wa": "Contact via WhatsApp",
       "wa.label": "WhatsApp",
       "nav.home": "Home",
-      "nav.studio": "Over mij en mijn atelier",
+      "nav.studio": "Atelier",
+      "nav.kit": "Weefkit",
+      "nav.about": "Over mij",
       "nav.lines": "Lijnen",
       "nav.work": "Werk",
       "nav.contact": "Contact",
@@ -347,13 +371,19 @@
       "meta.title": "Tormenta Telar — Art textile et dessin · Judit Lara",
       "meta.description":
         "Atelier de Judit Lara à Louvain : broderie, tissage, dessin et illustration. Textile contemporain entre le Chili et l’Europe.",
-      "meta.titleTaller": "À propos de moi et mon atelier · Tormenta Telar",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleKit": "Kit de tissage · Tormenta Telar",
+      "meta.titleAbout": "À propos de moi · Tormenta Telar",
       "meta.titleLineas": "Lignes de travail · Tormenta Telar",
       "meta.titleObra": "Œuvres · Tormenta Telar",
       "meta.titleContact": "Contact · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Louvain, Belgique.",
       "meta.descTaller":
-        "TormentaTelar : un atelier chromatique. Judit Lara à Louvain — broderie, tissage, dessin et volume. Racines chiliennes, regard européen.",
+        "Présentation de l’atelier Tormenta Telar à Louvain : lignes de travail et l’espace où je tisse, brode et dessine.",
+      "meta.descKit":
+        "Kit pour débuter avec un métier à peigne : matériel essentiel, photos du contenu et note sur le mode d’emploi.",
+      "meta.descAbout":
+        "Biographie et parcours de Judit Lara — artiste textile entre le Chili et l’Europe. CV et portrait à télécharger.",
       "meta.descLineas":
         "Parcourez les lignes : broderie, tissage, papier et argile. Accès direct à la galerie filtrée.",
       "meta.descObra":
@@ -377,7 +407,9 @@
       "a11y.wa": "Contacter sur WhatsApp",
       "wa.label": "WhatsApp",
       "nav.home": "Accueil",
-      "nav.studio": "À propos de moi et mon atelier",
+      "nav.studio": "Atelier",
+      "nav.kit": "Kit de tissage",
+      "nav.about": "À propos de moi",
       "nav.lines": "Lignes",
       "nav.work": "Œuvres",
       "nav.contact": "Contact",
@@ -413,7 +445,7 @@
       "studio.kitBody":
         "Il comprend le matériel et les outils essentiels. Le mode d’emploi est en cours de finalisation ; la version définitive arrive bientôt.",
       "studio.kitManualNote": "Mode d’emploi : bientôt disponible.",
-      "studio.aboutTitle": "À propos",
+      "studio.aboutTitle": "À propos de moi",
       "studio.bio":
         "<p>Judit Lara est artiste textile entre le Chili et la Belgique. Ajoutez ici votre courte biographie.</p><p>Un second paragraphe pour formation ou axes de travail, si vous le souhaitez.</p>",
       "studio.cvLink": "Télécharger le CV (PDF)",
@@ -455,13 +487,19 @@
       "meta.title": "Tormenta Telar — Textilkunst und Zeichnung · Judit Lara",
       "meta.description":
         "Atelier von Judit Lara in Löwen: Stickerei, Weben, Zeichnung und Illustration. Zeitgenössische Textilkunst zwischen Chile und Europa.",
-      "meta.titleTaller": "Über mich und mein Atelier · Tormenta Telar",
+      "meta.titleTaller": "Atelier · Tormenta Telar",
+      "meta.titleKit": "Webset · Tormenta Telar",
+      "meta.titleAbout": "Über mich · Tormenta Telar",
       "meta.titleLineas": "Arbeitslinien · Tormenta Telar",
       "meta.titleObra": "Werk · Tormenta Telar",
       "meta.titleContact": "Kontakt · Tormenta Telar",
       "meta.descInner": "Tormenta Telar — Judit Lara. Löwen, Belgien.",
       "meta.descTaller":
-        "TormentaTelar: ein chromatisches Atelier. Judit Lara in Löwen — Stickerei, Weben, Zeichnung und Volumenarbeiten. Chilenische Wurzeln, europäischer Blick.",
+        "Vorstellung des Ateliers Tormenta Telar in Löwen: Arbeitslinien und der Raum, in dem ich webe, stickere und zeichne.",
+      "meta.descKit":
+        "Einsteiger-Set mit Kammwebstuhl: wichtiges Material, Fotos vom Inhalt und ein Hinweis zur Bedienungsanleitung.",
+      "meta.descAbout":
+        "Biografie und Werdegang von Judit Lara — Textilkünstlerin zwischen Chile und Europa. CV und Porträt zum Download.",
       "meta.descLineas":
         "Nach Linien stöbern: Stickerei, Gewebe, Papier und Ton. Direkt zur gefilterten Galerie.",
       "meta.descObra":
@@ -485,7 +523,9 @@
       "a11y.wa": "Kontakt über WhatsApp",
       "wa.label": "WhatsApp",
       "nav.home": "Start",
-      "nav.studio": "Über mich und mein Atelier",
+      "nav.studio": "Atelier",
+      "nav.kit": "Webset",
+      "nav.about": "Über mich",
       "nav.lines": "Linien",
       "nav.work": "Werk",
       "nav.contact": "Kontakt",
@@ -638,25 +678,33 @@
     const titleKey =
       page === "taller"
         ? "meta.titleTaller"
-        : page === "lineas"
-          ? "meta.titleLineas"
-          : page === "obra"
-            ? "meta.titleObra"
-            : page === "contact"
-              ? "meta.titleContact"
-              : "meta.title";
+        : page === "kit"
+          ? "meta.titleKit"
+          : page === "sobre-mi"
+            ? "meta.titleAbout"
+            : page === "lineas"
+              ? "meta.titleLineas"
+              : page === "obra"
+                ? "meta.titleObra"
+                : page === "contact"
+                  ? "meta.titleContact"
+                  : "meta.title";
     const descKey =
       page === "home"
         ? "meta.description"
         : page === "taller"
           ? "meta.descTaller"
-          : page === "lineas"
-            ? "meta.descLineas"
-            : page === "obra"
-              ? "meta.descObra"
-              : page === "contact"
-                ? "meta.descContact"
-                : "meta.descInner";
+          : page === "kit"
+            ? "meta.descKit"
+            : page === "sobre-mi"
+              ? "meta.descAbout"
+              : page === "lineas"
+                ? "meta.descLineas"
+                : page === "obra"
+                  ? "meta.descObra"
+                  : page === "contact"
+                    ? "meta.descContact"
+                    : "meta.descInner";
 
     const titleEl = document.querySelector("title");
     if (titleEl) titleEl.textContent = t(titleKey);

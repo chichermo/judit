@@ -1471,16 +1471,26 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.taller-dual-card .studio-grid--paired {
+.taller-dual-card .studio-grid--paired,
+.section-taller-studio .studio-grid--paired {
   margin-top: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 @media (max-width: 520px) {
-  .taller-dual-card .studio-grid--paired {
+  .taller-dual-card .studio-grid--paired,
+  .section-taller-studio .studio-grid--paired {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
+}
+
+.section-taller-studio {
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.taller-studio-article .section-intro {
+  margin-bottom: 0.25rem;
 }
 
 .taller-dual-card p[data-i18n="studio.kitBody"] {
@@ -1681,12 +1691,14 @@ a:hover {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.taller-dual-card .studio-grid--gemini {
+.taller-dual-card .studio-grid--gemini,
+.section-taller-studio .studio-grid--gemini {
   gap: 0.75rem;
 }
 
 @media (min-width: 521px) {
-  .taller-dual-card .studio-grid--gemini {
+  .taller-dual-card .studio-grid--gemini,
+  .section-taller-studio .studio-grid--gemini {
     gap: 1rem;
   }
 }

@@ -113,7 +113,7 @@ const fabBlock = `    <a
 `;
 
 function navPlaceholders(active) {
-  const keys = ["HOME", "STUDIO", "LINES", "WORK", "CONTACT"];
+  const keys = ["HOME", "STUDIO", "KIT", "ABOUT", "LINES", "WORK", "CONTACT"];
   const map = Object.fromEntries(keys.map((k) => [`__NAV_${k}__`, ""]));
   const up = active.toUpperCase();
   if (map[`__NAV_${up}__`] !== undefined) map[`__NAV_${up}__`] = ' aria-current="page"';
@@ -132,6 +132,8 @@ function applyNav(template, active) {
 function breadcrumb(slug) {
   const map = {
     studio: { i18n: "nav.studio", label: "Taller" },
+    kit: { i18n: "nav.kit", label: "Kit de telar" },
+    about: { i18n: "nav.about", label: "Acerca de mí" },
     lines: { i18n: "nav.lines", label: "Líneas" },
     work: { i18n: "nav.work", label: "Obra" },
     contact: { i18n: "nav.contact", label: "Contacto" },
@@ -169,7 +171,15 @@ function pageHtml(opts) {
   let header = applyNav(readB("header.html"), navActive);
   const footer = readB(footerName === "home" ? "footer-home.html" : "footer-sub.html");
   const main = readB(mainFile);
-  const crumbSlug = { HOME: "", STUDIO: "studio", LINES: "lines", WORK: "work", CONTACT: "contact" }[navActive];
+  const crumbSlug = {
+    HOME: "",
+    STUDIO: "studio",
+    KIT: "kit",
+    ABOUT: "about",
+    LINES: "lines",
+    WORK: "work",
+    CONTACT: "contact",
+  }[navActive];
   const crumb = breadcrumb(crumbSlug || "");
 
   let scriptsHtml;
@@ -240,13 +250,43 @@ const pages = [
   {
     outfile: "taller.html",
     bodyAttrs: ' class="page-sub" data-page="taller"',
-    headTitle: "Acerca de mí y mi taller · Tormenta Telar",
+    headTitle: "Taller · Tormenta Telar",
     headDesc:
-      "El atelier de Judit Lara en Lovaina: bordado, telar, dibujo en papel y piezas de volumen. Raíces chilenas, mirada europea.",
+      "Presentación del taller Tormenta Telar en Lovaina: líneas de trabajo, materiales y el espacio de creación.",
     path: "/taller.html",
     navActive: "STUDIO",
     footerName: "sub",
     mainFile: "main-taller.html",
+    preMainDecor: `    <div class="grain" aria-hidden="true"></div>
+`,
+    afterMain: "",
+    scripts: "sub",
+  },
+  {
+    outfile: "kit-telar.html",
+    bodyAttrs: ' class="page-sub" data-page="kit"',
+    headTitle: "Kit de telar · Tormenta Telar",
+    headDesc:
+      "Kit para empezar con telar de peine: materiales, imágenes y nota sobre el manual de uso.",
+    path: "/kit-telar.html",
+    navActive: "KIT",
+    footerName: "sub",
+    mainFile: "main-kit-telar.html",
+    preMainDecor: `    <div class="grain" aria-hidden="true"></div>
+`,
+    afterMain: "",
+    scripts: "sub",
+  },
+  {
+    outfile: "sobre-mi.html",
+    bodyAttrs: ' class="page-sub" data-page="sobre-mi"',
+    headTitle: "Acerca de mí · Tormenta Telar",
+    headDesc:
+      "Biografía y trayectoria de Judit Lara — artista textil entre Chile y Europa. CV y retrato para prensa.",
+    path: "/sobre-mi.html",
+    navActive: "ABOUT",
+    footerName: "sub",
+    mainFile: "main-sobre-mi.html",
     preMainDecor: `    <div class="grain" aria-hidden="true"></div>
 `,
     afterMain: "",
