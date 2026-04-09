@@ -986,6 +986,35 @@ a:hover {
 /* Carrusel del hero — enlaces a la tienda */
 .hero-carousel-viewport {
   --hero-carousel-arrow: rgba(255, 255, 255, 0.92);
+  display: grid;
+  align-items: stretch;
+}
+
+.hero-img-wrap.hero-carousel-viewport > .hero-master-video,
+.hero-img-wrap.hero-carousel-viewport > .hero-carousel-track {
+  grid-area: 1 / 1;
+  min-height: 0;
+}
+
+.hero-master-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+.hero-media--carousel .hero-master-video {
+  display: none;
+}
+
+.hero-media--video .hero-carousel-track {
+  display: none !important;
+}
+
+/* Flechas / dots / contador solo en modo carrusel */
+.hero-media--video .hero-carousel-ui {
+  display: none !important;
 }
 
 .hero-carousel-track {
@@ -1965,6 +1994,11 @@ a:hover {
   display: none;
 }
 
+[data-page="obra"] .lightbox-caption #lightbox-title[hidden],
+[data-page="obra"] .lightbox-caption #lightbox-price[hidden] {
+  display: none !important;
+}
+
 /* Contacto — fondo blanco unificado */
 .page-contact {
   position: relative;
@@ -2326,19 +2360,37 @@ a:hover {
 
 .footer-visits {
   margin: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sharp);
+  box-shadow: 0 2px 12px rgba(40, 34, 24, 0.08);
+}
+
+.footer-visits.muted {
+  color: var(--text);
+  opacity: 1;
 }
 
 .footer-visits-sep {
-  margin-inline: 0.2em 0.35em;
+  margin-inline: 0;
+  opacity: 0.75;
 }
 
 .footer-visits-value {
-  font-weight: 700;
+  font-size: 1.05em;
+  font-weight: 800;
   font-variant-numeric: tabular-nums;
   color: var(--text);
+  letter-spacing: 0.02em;
 }
 
 /* WhatsApp floating button */
