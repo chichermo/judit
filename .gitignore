@@ -6,5 +6,7 @@ Thumbs.db
 
 # Carpeta local pesada del archivo de arte (solo referencia en tu máquina; no subir a git)
 Fotos/Archivo de arte-*/
+Fotos/drive/
+Fotos/master telar.mp4
 Fotos/*.zip
 _about_extract.txt

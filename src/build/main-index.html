@@ -46,7 +46,22 @@
             <div class="hero-blob" aria-hidden="true"></div>
             <div class="hero-frame" id="hero-frame-tilt">
               <div class="hero-img-shine" aria-hidden="true"></div>
-              <div class="hero-img-wrap hero-carousel-viewport" id="hero-carousel" aria-roledescription="carousel">
+              <div
+                class="hero-img-wrap hero-carousel-viewport hero-media--video"
+                id="hero-carousel"
+                aria-roledescription="carousel"
+              >
+                <video
+                  class="hero-master-video"
+                  id="hero-master-video"
+                  playsinline
+                  muted
+                  loop
+                  autoplay
+                  preload="metadata"
+                >
+                  <source src="Fotos/hero/master-telar.mp4" type="video/mp4" />
+                </video>
                 <div class="hero-carousel-track" id="hero-carousel-track"></div>
                 <div class="hero-carousel-ui" aria-hidden="false">
                   <button

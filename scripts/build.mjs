@@ -192,7 +192,20 @@ function pageHtml(opts) {
     <script src="js/main.js"></script>`;
   } else if (scripts === "home") {
     scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/hero-carousel-data.js"></script>
     <script src="js/products-data.js"></script>
+    <script src="js/visit-counter.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>`;
+  } else if (scripts === "studio") {
+    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/studio-images-data.js"></script>
+    <script src="js/visit-counter.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>`;
+  } else if (scripts === "kit") {
+    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    <script src="js/kit-images-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
@@ -264,7 +277,7 @@ const pages = [
     preMainDecor: `    <div class="grain" aria-hidden="true"></div>
 `,
     afterMain: "",
-    scripts: "sub",
+    scripts: "studio",
   },
   {
     outfile: "kit-telar.html",
@@ -279,7 +292,7 @@ const pages = [
     preMainDecor: `    <div class="grain" aria-hidden="true"></div>
 `,
     afterMain: "",
-    scripts: "sub",
+    scripts: "kit",
   },
   {
     outfile: "sobre-mi.html",

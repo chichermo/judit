@@ -84,27 +84,23 @@
     return "dibujo";
   }
 
-  const GALLERY_SECTION_KEYS = [
-    "bordado",
-    "dibujos",
-    "dibujo-sin-marco",
-    "monstruos",
-    "obras",
-    "piedras",
-    "plasticina",
-  ];
+  const GALLERY_SECTION_KEYS = ["bordados", "dibujos", "instalacion", "plasticina", "telar", "volumen"];
 
   /** @param {{ category: string, name: string }} p */
   function normalizeObraCategory(p) {
     const c = p.category;
     if (GALLERY_SECTION_KEYS.includes(c)) return c;
-    if (c === "telar") return "obras";
-    if (c === "dibujo") return "dibujos";
-    if (c === "arcilla") return "plasticina";
-    if (c === "bordado") return "bordado";
+    if (c === "bordado" || c === "bordados") return "bordados";
+    if (c === "obras") return "telar";
+    if (c === "telar") return "telar";
+    if (c === "dibujo" || c === "dibujos") return "dibujos";
+    if (c === "arcilla" || c === "plasticina") return "plasticina";
+    if (c === "volumen") return "volumen";
+    if (c === "instalacion") return "instalacion";
+    if (c === "monstruos" || c === "dibujo-sin-marco" || c === "piedras") return "dibujos";
     const legacy = categorize(p.name);
-    if (legacy === "bordado") return "bordado";
-    if (legacy === "telar") return "obras";
+    if (legacy === "bordado") return "bordados";
+    if (legacy === "telar") return "telar";
     if (legacy === "arcilla") return "plasticina";
     return "dibujos";
   }
@@ -141,37 +137,28 @@
     }
   }
 
-  function initHeroCarousel() {
+  /**
+   * @param {{ image: string, url: string }[]} slides
+   */
+  function initHeroCarouselFromSlides(slides) {
     const track = document.getElementById("hero-carousel-track");
     const root = document.getElementById("hero-carousel");
     const prevBtn = document.getElementById("hero-carousel-prev");
     const nextBtn = document.getElementById("hero-carousel-next");
     const dotsEl = document.getElementById("hero-carousel-dots");
     const counterEl = document.getElementById("hero-carousel-counter");
-    if (!track || !enriched.length) return;
+    if (!track || !slides.length) return;
 
-    const carouselProducts = [...enriched]
-      .filter((p) => {
-        if (p.id >= 2000) return false;
-        if (p.id >= 25 && p.id <= 43) return false;
-        return true;
-      })
-      .sort((a, b) => {
-        const ta = a.category === "telar" ? 0 : 1;
-        const tb = b.category === "telar" ? 0 : 1;
-        if (ta !== tb) return ta - tb;
-        return 0;
-      });
-
-    carouselProducts.forEach((p, i) => {
+    track.innerHTML = "";
+    slides.forEach((p, i) => {
       const a = document.createElement("a");
       a.className = "hero-carousel-slide";
-      a.href = p.url;
+      a.href = p.url || "https://www.etsy.com/shop/juditlarae/";
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       const img = document.createElement("img");
       img.src = p.image;
-      img.alt = p.name;
+      img.alt = "";
       if (i === 0) {
         img.loading = "eager";
         if ("fetchPriority" in img) img.fetchPriority = "high";
@@ -183,12 +170,15 @@
       track.appendChild(a);
     });
 
-    const slides = track.querySelectorAll(".hero-carousel-slide");
-    const n = slides.length;
+    const slideEls = track.querySelectorAll(".hero-carousel-slide");
+    const n = slideEls.length;
     let index = 0;
     const maxDots = 12;
     const autoplayMs = 5500;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prevBtn) prevBtn.removeAttribute("hidden");
+    if (nextBtn) nextBtn.removeAttribute("hidden");
 
     if (n <= 1) {
       if (prevBtn) prevBtn.hidden = true;
@@ -276,7 +266,6 @@
       startAutoplay();
     }
 
-    /* Autoplay continuo: no pausar al pasar el ratón por el carrusel (solo controles manuales y a11y). */
     root?.addEventListener("focusin", stopAutoplay);
     root?.addEventListener("focusout", () => {
       requestAnimationFrame(() => {
@@ -292,6 +281,99 @@
     startAutoplay();
     updateHeroCarouselA11yLabels();
     window.addEventListener("tt-locale-change", updateHeroCarouselA11yLabels);
+  }
+
+  function initHeroMedia() {
+    const video = document.getElementById("hero-master-video");
+    const carouselRoot = document.getElementById("hero-carousel");
+    const track = document.getElementById("hero-carousel-track");
+    const prevBtn = document.getElementById("hero-carousel-prev");
+    const nextBtn = document.getElementById("hero-carousel-next");
+    const dotsEl = document.getElementById("hero-carousel-dots");
+    const counterEl = document.getElementById("hero-carousel-counter");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function useCarousel() {
+      if (video) video.pause();
+      carouselRoot?.classList.add("hero-media--carousel");
+      carouselRoot?.classList.remove("hero-media--video");
+      const slides = window.__TT_HERO_CAROUSEL__ || [];
+      if (slides.length) {
+        initHeroCarouselFromSlides(slides);
+      } else {
+        const fallback = [...baseEnriched]
+          .filter((p) => {
+            if (p.id >= 2000) return false;
+            if (p.id >= 25 && p.id <= 43) return false;
+            return true;
+          })
+          .sort((a, b) => {
+            const ta = a.category === "telar" ? 0 : 1;
+            const tb = b.category === "telar" ? 0 : 1;
+            if (ta !== tb) return ta - tb;
+            return 0;
+          })
+          .map((p) => ({ image: p.image, url: p.url }));
+        if (fallback.length) initHeroCarouselFromSlides(fallback);
+      }
+    }
+
+    function useVideo() {
+      carouselRoot?.classList.add("hero-media--video");
+      carouselRoot?.classList.remove("hero-media--carousel");
+      if (track) {
+        track.innerHTML = "";
+        track.style.transform = "";
+      }
+      if (prevBtn) {
+        prevBtn.hidden = true;
+        prevBtn.setAttribute("hidden", "");
+      }
+      if (nextBtn) {
+        nextBtn.hidden = true;
+        nextBtn.setAttribute("hidden", "");
+      }
+      if (dotsEl) {
+        dotsEl.hidden = true;
+        dotsEl.setAttribute("hidden", "");
+      }
+      if (counterEl) {
+        counterEl.hidden = true;
+        counterEl.setAttribute("hidden", "");
+      }
+      carouselRoot?.setAttribute("role", "region");
+      carouselRoot?.setAttribute("aria-label", I18N.t("hero.videoAria"));
+    }
+
+    if (!video || reduceMotion) {
+      useCarousel();
+      return;
+    }
+
+    video.addEventListener("error", () => useCarousel(), { once: true });
+
+    const tryPlay = () => {
+      video
+        .play()
+        .then(() => {
+          useVideo();
+        })
+        .catch(() => {
+          useCarousel();
+        });
+    };
+
+    if (video.readyState >= 2) {
+      tryPlay();
+    } else {
+      video.addEventListener("loadeddata", tryPlay, { once: true });
+    }
+
+    window.addEventListener("tt-locale-change", () => {
+      if (carouselRoot?.classList.contains("hero-media--video")) {
+        carouselRoot.setAttribute("aria-label", I18N.t("hero.videoAria"));
+      }
+    });
   }
 
   function initHeroParallax() {
@@ -349,18 +431,53 @@
   }
 
   if (page === "home") {
-    initHeroCarousel();
+    initHeroMedia();
     initHeroParallax();
     initCursorGlow();
   }
 
   initReveal();
 
+  function injectStudioLikeGrid(containerSel, paths) {
+    const grid = document.querySelector(containerSel);
+    const list = paths || [];
+    if (!grid || !list.length) return;
+    grid.innerHTML = "";
+    list.forEach((src) => {
+      const fig = document.createElement("figure");
+      fig.className = "studio-shot";
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = "";
+      img.loading = "lazy";
+      img.width = 800;
+      img.height = 600;
+      fig.appendChild(img);
+      grid.appendChild(fig);
+    });
+  }
+
+  if (page === "kit") {
+    injectStudioLikeGrid("[data-kit-grid]", window.__TT_KIT_IMAGES__);
+  }
+  if (page === "taller") {
+    injectStudioLikeGrid("[data-studio-grid]", window.__TT_STUDIO_IMAGES__);
+  }
+
   if (!galleryGrid) {
     return;
   }
 
-  const GALLERY_LEGACY_FILTERS = { telar: "obras", dibujo: "dibujos", arcilla: "plasticina" };
+  const GALLERY_LEGACY_FILTERS = {
+    bordado: "bordados",
+    obras: "telar",
+    telar: "telar",
+    dibujo: "dibujos",
+    arcilla: "plasticina",
+    "dibujo-sin-marco": "dibujos",
+    monstruos: "dibujos",
+    piedras: "dibujos",
+  };
 
   let activeFilter = (function readFilterFromURL() {
     const q = new URLSearchParams(location.search).get("f") || new URLSearchParams(location.search).get("filter");
@@ -432,28 +549,12 @@
 
         const img = document.createElement("img");
         img.src = item.image;
-        img.alt = item.name;
+        img.alt = "";
         img.loading = "lazy";
         img.decoding = "async";
         img.sizes = "(max-width: 600px) 50vw, 280px";
 
-        const body = document.createElement("div");
-        body.className = "gallery-item-body";
-
-        const title = document.createElement("p");
-        title.className = "gallery-item-title";
-        title.textContent = item.name;
-
-        const price = document.createElement("p");
-        price.className = "gallery-item-price";
-        price.textContent = formatPrice(item.price, item.currency);
-
-        const tag = document.createElement("span");
-        tag.className = "gallery-item-tag";
-        tag.textContent = labels[item.category] || item.category;
-
-        body.append(title, price, tag);
-        btn.append(img, body);
+        btn.append(img);
 
         btn.addEventListener("click", () => {
           lastGalleryFocus = btn;
@@ -521,9 +622,19 @@
     lightbox.hidden = false;
     document.body.classList.add("lightbox-open");
     lightboxImg.src = item.image;
-    lightboxImg.alt = item.name;
-    lightboxTitle.textContent = item.name;
-    lightboxPrice.textContent = formatPrice(item.price, item.currency);
+    lightboxImg.alt = "";
+    const isObra = page === "obra";
+    if (isObra) {
+      lightboxTitle.textContent = "";
+      lightboxTitle.setAttribute("hidden", "");
+      lightboxPrice.textContent = "";
+      lightboxPrice.setAttribute("hidden", "");
+    } else {
+      lightboxTitle.removeAttribute("hidden");
+      lightboxPrice.removeAttribute("hidden");
+      lightboxTitle.textContent = item.name;
+      lightboxPrice.textContent = formatPrice(item.price, item.currency);
+    }
     lightboxLink.href = item.url;
     if (lightboxLink) lightboxLink.textContent = I18N.t("lightbox.detail");
     lightbox.querySelector("#lightbox-close")?.focus();

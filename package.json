@@ -3,7 +3,8 @@
   "private": true,
   "homepage": "https://judit.vercel.app",
   "scripts": {
-    "sync:gallery": "node scripts/sync-gallery-fotos.mjs",
+    "sync:gallery": "node scripts/sync-from-drive.mjs",
+    "sync:drive": "node scripts/sync-from-drive.mjs",
     "build": "node scripts/build.mjs",
     "start": "npm run build && npx --yes serve -l 3000 public",
     "preview": "npm run build && npx --yes serve -l 3000 public"
