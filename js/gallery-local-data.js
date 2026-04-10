@@ -867,7 +867,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2096,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2096-01.png",
+    "image": "Fotos/galeria/plasticina/2096-02.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",

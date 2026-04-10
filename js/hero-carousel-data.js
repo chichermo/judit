@@ -385,7 +385,7 @@ window.__TT_HERO_CAROUSEL__ = [
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2096-plasticina-01.png",
+    "image": "Fotos/hero-carousel/hc-2096-plasticina-02.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
