@@ -867,7 +867,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2096,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2096-01.png",
+    "image": "Fotos/galeria/plasticina/2096-02.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -876,7 +876,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2097,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2097-02.png",
+    "image": "Fotos/galeria/plasticina/2097-03.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -885,7 +885,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2098,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2098-03.png",
+    "image": "Fotos/galeria/plasticina/2098-04.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -894,7 +894,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2099,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2099-04.png",
+    "image": "Fotos/galeria/plasticina/2099-chatgpt-image-dec-28-2025-03_54_19-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -903,7 +903,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2100,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2100-chatgpt-image-dec-28-2025-03_54_19-pm.png",
+    "image": "Fotos/galeria/plasticina/2100-chatgpt-image-dec-28-2025-05_13_41-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -912,7 +912,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2101,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2101-chatgpt-image-dec-28-2025-05_13_41-pm.png",
+    "image": "Fotos/galeria/plasticina/2101-chatgpt-image-dec-28-2025-05_14_35-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -921,16 +921,16 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2102,
     "name": "",
-    "image": "Fotos/galeria/plasticina/2102-chatgpt-image-dec-28-2025-05_14_35-pm.png",
+    "image": "Fotos/galeria/telar/2102-02.02.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
-    "category": "plasticina"
+    "category": "telar"
   },
   {
     "id": 2103,
     "name": "",
-    "image": "Fotos/galeria/telar/2103-02.02.png",
+    "image": "Fotos/galeria/telar/2103-03.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -939,7 +939,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2104,
     "name": "",
-    "image": "Fotos/galeria/telar/2104-03.png",
+    "image": "Fotos/galeria/telar/2104-04.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -948,7 +948,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2105,
     "name": "",
-    "image": "Fotos/galeria/telar/2105-04.png",
+    "image": "Fotos/galeria/telar/2105-05.02.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -957,7 +957,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2106,
     "name": "",
-    "image": "Fotos/galeria/telar/2106-05.02.png",
+    "image": "Fotos/galeria/telar/2106-05.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -966,7 +966,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2107,
     "name": "",
-    "image": "Fotos/galeria/telar/2107-05.png",
+    "image": "Fotos/galeria/telar/2107-06.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -975,7 +975,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2108,
     "name": "",
-    "image": "Fotos/galeria/telar/2108-06.png",
+    "image": "Fotos/galeria/telar/2108-07.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -984,7 +984,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2109,
     "name": "",
-    "image": "Fotos/galeria/telar/2109-07.png",
+    "image": "Fotos/galeria/telar/2109-08.01.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -993,7 +993,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2110,
     "name": "",
-    "image": "Fotos/galeria/telar/2110-08.01.png",
+    "image": "Fotos/galeria/telar/2110-08.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1002,7 +1002,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2111,
     "name": "",
-    "image": "Fotos/galeria/telar/2111-08.png",
+    "image": "Fotos/galeria/telar/2111-09.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1011,7 +1011,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2112,
     "name": "",
-    "image": "Fotos/galeria/telar/2112-09.png",
+    "image": "Fotos/galeria/telar/2112-010.01.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1020,7 +1020,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2113,
     "name": "",
-    "image": "Fotos/galeria/telar/2113-010.01.png",
+    "image": "Fotos/galeria/telar/2113-010.02.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1029,7 +1029,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2114,
     "name": "",
-    "image": "Fotos/galeria/telar/2114-010.02.png",
+    "image": "Fotos/galeria/telar/2114-010.03.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1038,7 +1038,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2115,
     "name": "",
-    "image": "Fotos/galeria/telar/2115-010.03.png",
+    "image": "Fotos/galeria/telar/2115-010.05.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1047,7 +1047,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2116,
     "name": "",
-    "image": "Fotos/galeria/telar/2116-010.05.png",
+    "image": "Fotos/galeria/telar/2116-010.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1056,7 +1056,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2117,
     "name": "",
-    "image": "Fotos/galeria/telar/2117-010.png",
+    "image": "Fotos/galeria/telar/2117-011.01.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1065,7 +1065,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2118,
     "name": "",
-    "image": "Fotos/galeria/telar/2118-011.01.png",
+    "image": "Fotos/galeria/telar/2118-011.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1074,7 +1074,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2119,
     "name": "",
-    "image": "Fotos/galeria/telar/2119-011.png",
+    "image": "Fotos/galeria/telar/2119-20260325_103953.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1083,7 +1083,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2120,
     "name": "",
-    "image": "Fotos/galeria/telar/2120-20260325_103953.jpg",
+    "image": "Fotos/galeria/telar/2120-1000106532.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1092,7 +1092,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2121,
     "name": "",
-    "image": "Fotos/galeria/telar/2121-1000106532.png",
+    "image": "Fotos/galeria/telar/2121-1000109534.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1101,7 +1101,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2122,
     "name": "",
-    "image": "Fotos/galeria/telar/2122-1000109534.png",
+    "image": "Fotos/galeria/telar/2122-1000109548.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1110,7 +1110,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2123,
     "name": "",
-    "image": "Fotos/galeria/telar/2123-1000109548.png",
+    "image": "Fotos/galeria/telar/2123-1774437735603-1.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1119,7 +1119,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2124,
     "name": "",
-    "image": "Fotos/galeria/telar/2124-1774437735603-1.png",
+    "image": "Fotos/galeria/telar/2124-1774437944433-1.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1128,7 +1128,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2125,
     "name": "",
-    "image": "Fotos/galeria/telar/2125-1774437944433-1.png",
+    "image": "Fotos/galeria/telar/2125-1774438000753-1.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1137,7 +1137,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2126,
     "name": "",
-    "image": "Fotos/galeria/telar/2126-1774438000753-1.png",
+    "image": "Fotos/galeria/telar/2126-captura-de-pantalla-2025-09-30-155908.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1146,7 +1146,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2127,
     "name": "",
-    "image": "Fotos/galeria/telar/2127-captura-de-pantalla-2025-09-30-155908.jpg",
+    "image": "Fotos/galeria/telar/2127-captura-de-pantalla-2025-09-30-160202.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1155,7 +1155,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2128,
     "name": "",
-    "image": "Fotos/galeria/telar/2128-captura-de-pantalla-2025-09-30-160202.jpg",
+    "image": "Fotos/galeria/telar/2128-captura-de-pantalla-2025-09-30-160227.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1164,7 +1164,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2129,
     "name": "",
-    "image": "Fotos/galeria/telar/2129-captura-de-pantalla-2025-09-30-160227.jpg",
+    "image": "Fotos/galeria/telar/2129-captura-de-pantalla-2025-09-30-160246.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1173,7 +1173,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2130,
     "name": "",
-    "image": "Fotos/galeria/telar/2130-captura-de-pantalla-2025-09-30-160246.jpg",
+    "image": "Fotos/galeria/telar/2130-captura-de-pantalla-2025-09-30-160307.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1182,7 +1182,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2131,
     "name": "",
-    "image": "Fotos/galeria/telar/2131-captura-de-pantalla-2025-09-30-160307.jpg",
+    "image": "Fotos/galeria/telar/2131-captura-de-pantalla-2025-09-30-160335.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1191,7 +1191,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2132,
     "name": "",
-    "image": "Fotos/galeria/telar/2132-captura-de-pantalla-2025-09-30-160335.jpg",
+    "image": "Fotos/galeria/telar/2132-captura-de-pantalla-2025-09-30-160354.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1200,7 +1200,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2133,
     "name": "",
-    "image": "Fotos/galeria/telar/2133-captura-de-pantalla-2025-09-30-160354.jpg",
+    "image": "Fotos/galeria/telar/2133-captura-de-pantalla-2025-09-30-160413.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1209,7 +1209,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2134,
     "name": "",
-    "image": "Fotos/galeria/telar/2134-captura-de-pantalla-2025-09-30-160413.jpg",
+    "image": "Fotos/galeria/telar/2134-captura-de-pantalla-2025-09-30-160816.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1218,7 +1218,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2135,
     "name": "",
-    "image": "Fotos/galeria/telar/2135-captura-de-pantalla-2025-09-30-160816.jpg",
+    "image": "Fotos/galeria/telar/2135-captura-de-pantalla-2025-09-30-160837.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1227,7 +1227,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2136,
     "name": "",
-    "image": "Fotos/galeria/telar/2136-captura-de-pantalla-2025-09-30-160837.jpg",
+    "image": "Fotos/galeria/telar/2136-captura-de-pantalla-2025-09-30-160854.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1236,7 +1236,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2137,
     "name": "",
-    "image": "Fotos/galeria/telar/2137-captura-de-pantalla-2025-09-30-160854.jpg",
+    "image": "Fotos/galeria/telar/2137-captura-de-pantalla-2025-09-30-160913.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1245,7 +1245,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2138,
     "name": "",
-    "image": "Fotos/galeria/telar/2138-captura-de-pantalla-2025-09-30-160913.jpg",
+    "image": "Fotos/galeria/telar/2138-captura-de-pantalla-2025-09-30-160931.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1254,7 +1254,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2139,
     "name": "",
-    "image": "Fotos/galeria/telar/2139-captura-de-pantalla-2025-09-30-160931.jpg",
+    "image": "Fotos/galeria/telar/2139-chatgpt-image-dec-28-2025-01_01_06-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1263,7 +1263,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2140,
     "name": "",
-    "image": "Fotos/galeria/telar/2140-chatgpt-image-dec-28-2025-01_01_06-pm.png",
+    "image": "Fotos/galeria/telar/2140-chatgpt-image-dec-28-2025-01_30_23-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1272,7 +1272,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2141,
     "name": "",
-    "image": "Fotos/galeria/telar/2141-chatgpt-image-dec-28-2025-01_30_23-pm.png",
+    "image": "Fotos/galeria/telar/2141-chatgpt-image-dec-28-2025-01_32_39-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1281,7 +1281,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2142,
     "name": "",
-    "image": "Fotos/galeria/telar/2142-chatgpt-image-dec-28-2025-01_32_39-pm.png",
+    "image": "Fotos/galeria/telar/2142-chatgpt-image-dec-28-2025-01_33_54-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1290,7 +1290,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2143,
     "name": "",
-    "image": "Fotos/galeria/telar/2143-chatgpt-image-dec-28-2025-01_33_54-pm.png",
+    "image": "Fotos/galeria/telar/2143-chatgpt-image-dec-28-2025-01_39_40-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1299,7 +1299,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2144,
     "name": "",
-    "image": "Fotos/galeria/telar/2144-chatgpt-image-dec-28-2025-01_39_40-pm.png",
+    "image": "Fotos/galeria/telar/2144-chatgpt-image-dec-28-2025-01_40_30-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1308,7 +1308,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2145,
     "name": "",
-    "image": "Fotos/galeria/telar/2145-chatgpt-image-dec-28-2025-01_40_30-pm.png",
+    "image": "Fotos/galeria/telar/2145-chatgpt-image-dec-28-2025-01_41_38-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1317,7 +1317,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2146,
     "name": "",
-    "image": "Fotos/galeria/telar/2146-chatgpt-image-dec-28-2025-01_41_38-pm.png",
+    "image": "Fotos/galeria/telar/2146-chatgpt-image-dec-28-2025-03_21_52-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1326,7 +1326,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2147,
     "name": "",
-    "image": "Fotos/galeria/telar/2147-chatgpt-image-dec-28-2025-03_21_52-pm.png",
+    "image": "Fotos/galeria/telar/2147-chatgpt-image-dec-28-2025-11_00_19-am.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1335,7 +1335,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2148,
     "name": "",
-    "image": "Fotos/galeria/telar/2148-chatgpt-image-dec-28-2025-11_00_19-am.png",
+    "image": "Fotos/galeria/telar/2148-chatgpt-image-dec-28-2025-11_18_16-am.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1344,7 +1344,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2149,
     "name": "",
-    "image": "Fotos/galeria/telar/2149-chatgpt-image-dec-28-2025-11_18_16-am.png",
+    "image": "Fotos/galeria/telar/2149-chatgpt-image-jan-15-2026-10_53_49-am.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1353,7 +1353,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2150,
     "name": "",
-    "image": "Fotos/galeria/telar/2150-chatgpt-image-jan-15-2026-10_53_49-am.png",
+    "image": "Fotos/galeria/telar/2150-chatgpt-image-jan-15-2026-10_54_51-am.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1362,7 +1362,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2151,
     "name": "",
-    "image": "Fotos/galeria/telar/2151-chatgpt-image-jan-15-2026-10_54_51-am.png",
+    "image": "Fotos/galeria/telar/2151-chatgpt-image-jan-15-2026-10_55_44-am.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1371,7 +1371,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2152,
     "name": "",
-    "image": "Fotos/galeria/telar/2152-chatgpt-image-jan-15-2026-10_55_44-am.png",
+    "image": "Fotos/galeria/telar/2152-judit.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1380,7 +1380,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2153,
     "name": "",
-    "image": "Fotos/galeria/telar/2153-judit.jpg",
+    "image": "Fotos/galeria/telar/2153-maca08.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1389,7 +1389,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2154,
     "name": "",
-    "image": "Fotos/galeria/telar/2154-maca08.jpg",
+    "image": "Fotos/galeria/telar/2154-sam_7370.jpg.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1398,7 +1398,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2155,
     "name": "",
-    "image": "Fotos/galeria/telar/2155-sam_7370.jpg.jpg",
+    "image": "Fotos/galeria/telar/2155-sam_7372.jpg.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1407,7 +1407,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2156,
     "name": "",
-    "image": "Fotos/galeria/telar/2156-sam_7372.jpg.jpg",
+    "image": "Fotos/galeria/telar/2156-sam_7375.jpg.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1416,7 +1416,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2157,
     "name": "",
-    "image": "Fotos/galeria/telar/2157-sam_7375.jpg.jpg",
+    "image": "Fotos/galeria/telar/2157-sam_7379.jpg.jpg",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1425,16 +1425,16 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2158,
     "name": "",
-    "image": "Fotos/galeria/telar/2158-sam_7379.jpg.jpg",
+    "image": "Fotos/galeria/volumen/2158-1000109526.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
-    "category": "telar"
+    "category": "volumen"
   },
   {
     "id": 2159,
     "name": "",
-    "image": "Fotos/galeria/volumen/2159-1000109526.png",
+    "image": "Fotos/galeria/volumen/2159-1000109527.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1443,7 +1443,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2160,
     "name": "",
-    "image": "Fotos/galeria/volumen/2160-1000109527.png",
+    "image": "Fotos/galeria/volumen/2160-1000109528.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1452,7 +1452,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2161,
     "name": "",
-    "image": "Fotos/galeria/volumen/2161-1000109528.png",
+    "image": "Fotos/galeria/volumen/2161-chatgpt-image-dec-28-2025-05_25_05-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",
@@ -1461,16 +1461,7 @@ window.__TT_GALLERY_LOCAL__ = [
   {
     "id": 2162,
     "name": "",
-    "image": "Fotos/galeria/volumen/2162-chatgpt-image-dec-28-2025-05_25_05-pm.png",
-    "price": "",
-    "currency": "EUR",
-    "url": "https://www.etsy.com/shop/juditlarae/",
-    "category": "volumen"
-  },
-  {
-    "id": 2163,
-    "name": "",
-    "image": "Fotos/galeria/volumen/2163-chatgpt-image-dec-28-2025-05_27_39-pm.png",
+    "image": "Fotos/galeria/volumen/2162-chatgpt-image-dec-28-2025-05_27_39-pm.png",
     "price": "",
     "currency": "EUR",
     "url": "https://www.etsy.com/shop/juditlarae/",

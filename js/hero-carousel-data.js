@@ -385,327 +385,323 @@ window.__TT_HERO_CAROUSEL__ = [
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2096-plasticina-01.png",
+    "image": "Fotos/hero-carousel/hc-2096-plasticina-02.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2097-plasticina-02.png",
+    "image": "Fotos/hero-carousel/hc-2097-plasticina-03.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2098-plasticina-03.png",
+    "image": "Fotos/hero-carousel/hc-2098-plasticina-04.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2099-plasticina-04.png",
+    "image": "Fotos/hero-carousel/hc-2099-plasticina-chatgpt-image-dec-28-2025-03_54_19-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2100-plasticina-chatgpt-image-dec-28-2025-03_54_19-pm.png",
+    "image": "Fotos/hero-carousel/hc-2100-plasticina-chatgpt-image-dec-28-2025-05_13_41-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2101-plasticina-chatgpt-image-dec-28-2025-05_13_41-pm.png",
+    "image": "Fotos/hero-carousel/hc-2101-plasticina-chatgpt-image-dec-28-2025-05_14_35-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2102-plasticina-chatgpt-image-dec-28-2025-05_14_35-pm.png",
+    "image": "Fotos/hero-carousel/hc-2102-seccion-kit-de-telar-seccion-kit-de-telar.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2103-seccion-kit-de-telar-seccion-kit-de-telar.png",
+    "image": "Fotos/hero-carousel/hc-2103-seccion-kit-de-telar-seccion-kit-de-telar-1.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2104-seccion-kit-de-telar-seccion-kit-de-telar-1.png",
+    "image": "Fotos/hero-carousel/hc-2104-seccion-kit-de-telar-seccion-kit-de-telar-2.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2105-seccion-kit-de-telar-seccion-kit-de-telar-2.png",
+    "image": "Fotos/hero-carousel/hc-2105-seccion-kit-de-telar-seccion-kit-de-telar-3.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2106-seccion-kit-de-telar-seccion-kit-de-telar-3.png",
+    "image": "Fotos/hero-carousel/hc-2106-seccion-kit-de-telar-seccion-kit-de-telar-4.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2107-seccion-kit-de-telar-seccion-kit-de-telar-4.png",
+    "image": "Fotos/hero-carousel/hc-2107-seccion-kit-de-telar-seccion-kit-de-telar-5.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2108-seccion-kit-de-telar-seccion-kit-de-telar-5.png",
+    "image": "Fotos/hero-carousel/hc-2108-seccion-kit-de-telar-seccion-kit-de-telar-6.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2109-seccion-kit-de-telar-seccion-kit-de-telar-6.png",
+    "image": "Fotos/hero-carousel/hc-2109-seccion-studio-seccion-studio.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2110-seccion-studio-seccion-studio.png",
+    "image": "Fotos/hero-carousel/hc-2110-seccion-studio-seccion-studio-1.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2111-seccion-studio-seccion-studio-1.png",
+    "image": "Fotos/hero-carousel/hc-2111-seccion-studio-seccion-studio-2.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2112-seccion-studio-seccion-studio-2.png",
+    "image": "Fotos/hero-carousel/hc-2112-seccion-studio-seccion-studio-3.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2113-seccion-studio-seccion-studio-3.png",
+    "image": "Fotos/hero-carousel/hc-2113-seccion-studio-seccion-studio-4.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2114-seccion-studio-seccion-studio-4.png",
+    "image": "Fotos/hero-carousel/hc-2114-seccion-studio-seccion-studio-5.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2115-seccion-studio-seccion-studio-5.png",
+    "image": "Fotos/hero-carousel/hc-2115-telar-02.02.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2116-telar-02.02.png",
+    "image": "Fotos/hero-carousel/hc-2116-telar-03.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2117-telar-03.png",
+    "image": "Fotos/hero-carousel/hc-2117-telar-04.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2118-telar-04.png",
+    "image": "Fotos/hero-carousel/hc-2118-telar-05.02.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2119-telar-05.02.png",
+    "image": "Fotos/hero-carousel/hc-2119-telar-05.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2120-telar-05.png",
+    "image": "Fotos/hero-carousel/hc-2120-telar-06.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2121-telar-06.png",
+    "image": "Fotos/hero-carousel/hc-2121-telar-07.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2122-telar-07.png",
+    "image": "Fotos/hero-carousel/hc-2122-telar-08.01.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2123-telar-08.01.png",
+    "image": "Fotos/hero-carousel/hc-2123-telar-08.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2124-telar-08.png",
+    "image": "Fotos/hero-carousel/hc-2124-telar-09.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2125-telar-09.png",
+    "image": "Fotos/hero-carousel/hc-2125-telar-010.01.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2126-telar-010.01.png",
+    "image": "Fotos/hero-carousel/hc-2126-telar-010.02.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2127-telar-010.02.png",
+    "image": "Fotos/hero-carousel/hc-2127-telar-010.03.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2128-telar-010.03.png",
+    "image": "Fotos/hero-carousel/hc-2128-telar-010.05.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2129-telar-010.05.png",
+    "image": "Fotos/hero-carousel/hc-2129-telar-010.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2130-telar-010.png",
+    "image": "Fotos/hero-carousel/hc-2130-telar-011.01.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2131-telar-011.01.png",
+    "image": "Fotos/hero-carousel/hc-2131-telar-011.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2132-telar-011.png",
+    "image": "Fotos/hero-carousel/hc-2132-telar-20260325_103953.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2133-telar-20260325_103953.jpg",
+    "image": "Fotos/hero-carousel/hc-2133-telar-1000106532.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2134-telar-1000106532.png",
+    "image": "Fotos/hero-carousel/hc-2134-telar-1000109534.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2135-telar-1000109534.png",
+    "image": "Fotos/hero-carousel/hc-2135-telar-1000109548.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2136-telar-1000109548.png",
+    "image": "Fotos/hero-carousel/hc-2136-telar-1774437735603-1.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2137-telar-1774437735603-1.png",
+    "image": "Fotos/hero-carousel/hc-2137-telar-1774437944433-1.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2138-telar-1774437944433-1.png",
+    "image": "Fotos/hero-carousel/hc-2138-telar-1774438000753-1.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2139-telar-1774438000753-1.png",
+    "image": "Fotos/hero-carousel/hc-2139-telar-captura-de-pantalla-2025-09-30-155908.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2140-telar-captura-de-pantalla-2025-09-30-155908.jpg",
+    "image": "Fotos/hero-carousel/hc-2140-telar-captura-de-pantalla-2025-09-30-160202.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2141-telar-captura-de-pantalla-2025-09-30-160202.jpg",
+    "image": "Fotos/hero-carousel/hc-2141-telar-captura-de-pantalla-2025-09-30-160227.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2142-telar-captura-de-pantalla-2025-09-30-160227.jpg",
+    "image": "Fotos/hero-carousel/hc-2142-telar-captura-de-pantalla-2025-09-30-160246.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2143-telar-captura-de-pantalla-2025-09-30-160246.jpg",
+    "image": "Fotos/hero-carousel/hc-2143-telar-captura-de-pantalla-2025-09-30-160307.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2144-telar-captura-de-pantalla-2025-09-30-160307.jpg",
+    "image": "Fotos/hero-carousel/hc-2144-telar-captura-de-pantalla-2025-09-30-160335.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2145-telar-captura-de-pantalla-2025-09-30-160335.jpg",
+    "image": "Fotos/hero-carousel/hc-2145-telar-captura-de-pantalla-2025-09-30-160354.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2146-telar-captura-de-pantalla-2025-09-30-160354.jpg",
+    "image": "Fotos/hero-carousel/hc-2146-telar-captura-de-pantalla-2025-09-30-160413.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2147-telar-captura-de-pantalla-2025-09-30-160413.jpg",
+    "image": "Fotos/hero-carousel/hc-2147-telar-captura-de-pantalla-2025-09-30-160816.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2148-telar-captura-de-pantalla-2025-09-30-160816.jpg",
+    "image": "Fotos/hero-carousel/hc-2148-telar-captura-de-pantalla-2025-09-30-160837.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2149-telar-captura-de-pantalla-2025-09-30-160837.jpg",
+    "image": "Fotos/hero-carousel/hc-2149-telar-captura-de-pantalla-2025-09-30-160854.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2150-telar-captura-de-pantalla-2025-09-30-160854.jpg",
+    "image": "Fotos/hero-carousel/hc-2150-telar-captura-de-pantalla-2025-09-30-160913.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2151-telar-captura-de-pantalla-2025-09-30-160913.jpg",
+    "image": "Fotos/hero-carousel/hc-2151-telar-captura-de-pantalla-2025-09-30-160931.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2152-telar-captura-de-pantalla-2025-09-30-160931.jpg",
+    "image": "Fotos/hero-carousel/hc-2152-telar-chatgpt-image-dec-28-2025-01_01_06-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2153-telar-chatgpt-image-dec-28-2025-01_01_06-pm.png",
+    "image": "Fotos/hero-carousel/hc-2153-telar-chatgpt-image-dec-28-2025-01_30_23-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2154-telar-chatgpt-image-dec-28-2025-01_30_23-pm.png",
+    "image": "Fotos/hero-carousel/hc-2154-telar-chatgpt-image-dec-28-2025-01_32_39-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2155-telar-chatgpt-image-dec-28-2025-01_32_39-pm.png",
+    "image": "Fotos/hero-carousel/hc-2155-telar-chatgpt-image-dec-28-2025-01_33_54-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2156-telar-chatgpt-image-dec-28-2025-01_33_54-pm.png",
+    "image": "Fotos/hero-carousel/hc-2156-telar-chatgpt-image-dec-28-2025-01_39_40-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2157-telar-chatgpt-image-dec-28-2025-01_39_40-pm.png",
+    "image": "Fotos/hero-carousel/hc-2157-telar-chatgpt-image-dec-28-2025-01_40_30-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2158-telar-chatgpt-image-dec-28-2025-01_40_30-pm.png",
+    "image": "Fotos/hero-carousel/hc-2158-telar-chatgpt-image-dec-28-2025-01_41_38-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2159-telar-chatgpt-image-dec-28-2025-01_41_38-pm.png",
+    "image": "Fotos/hero-carousel/hc-2159-telar-chatgpt-image-dec-28-2025-03_21_52-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2160-telar-chatgpt-image-dec-28-2025-03_21_52-pm.png",
+    "image": "Fotos/hero-carousel/hc-2160-telar-chatgpt-image-dec-28-2025-11_00_19-am.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2161-telar-chatgpt-image-dec-28-2025-11_00_19-am.png",
+    "image": "Fotos/hero-carousel/hc-2161-telar-chatgpt-image-dec-28-2025-11_18_16-am.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2162-telar-chatgpt-image-dec-28-2025-11_18_16-am.png",
+    "image": "Fotos/hero-carousel/hc-2162-telar-chatgpt-image-jan-15-2026-10_53_49-am.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2163-telar-chatgpt-image-jan-15-2026-10_53_49-am.png",
+    "image": "Fotos/hero-carousel/hc-2163-telar-chatgpt-image-jan-15-2026-10_54_51-am.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2164-telar-chatgpt-image-jan-15-2026-10_54_51-am.png",
+    "image": "Fotos/hero-carousel/hc-2164-telar-chatgpt-image-jan-15-2026-10_55_44-am.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2165-telar-chatgpt-image-jan-15-2026-10_55_44-am.png",
+    "image": "Fotos/hero-carousel/hc-2165-telar-judit.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2166-telar-judit.jpg",
+    "image": "Fotos/hero-carousel/hc-2166-telar-maca08.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2167-telar-maca08.jpg",
+    "image": "Fotos/hero-carousel/hc-2167-telar-sam_7370.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2168-telar-sam_7370.jpg",
+    "image": "Fotos/hero-carousel/hc-2168-telar-sam_7372.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2169-telar-sam_7372.jpg",
+    "image": "Fotos/hero-carousel/hc-2169-telar-sam_7375.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2170-telar-sam_7375.jpg",
+    "image": "Fotos/hero-carousel/hc-2170-telar-sam_7379.jpg",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2171-telar-sam_7379.jpg",
+    "image": "Fotos/hero-carousel/hc-2171-volumen-1000109526.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2172-volumen-1000109526.png",
+    "image": "Fotos/hero-carousel/hc-2172-volumen-1000109527.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2173-volumen-1000109527.png",
+    "image": "Fotos/hero-carousel/hc-2173-volumen-1000109528.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2174-volumen-1000109528.png",
+    "image": "Fotos/hero-carousel/hc-2174-volumen-chatgpt-image-dec-28-2025-05_25_05-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   },
   {
-    "image": "Fotos/hero-carousel/hc-2175-volumen-chatgpt-image-dec-28-2025-05_25_05-pm.png",
-    "url": "https://www.etsy.com/shop/juditlarae/"
-  },
-  {
-    "image": "Fotos/hero-carousel/hc-2176-volumen-chatgpt-image-dec-28-2025-05_27_39-pm.png",
+    "image": "Fotos/hero-carousel/hc-2175-volumen-chatgpt-image-dec-28-2025-05_27_39-pm.png",
     "url": "https://www.etsy.com/shop/juditlarae/"
   }
 ];
