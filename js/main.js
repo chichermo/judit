@@ -541,9 +541,6 @@
         const btn = document.createElement("button");
         btn.type = "button";
         btn.className = "gallery-item";
-        if (localIndex % 8 === 0) {
-          btn.classList.add("gallery-item--featured");
-        }
         btn.dataset.category = item.category;
         if (!show) btn.hidden = true;
 

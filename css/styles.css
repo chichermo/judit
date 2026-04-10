@@ -1948,15 +1948,6 @@ a:hover {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-}
-
-.gallery-item--featured {
-  grid-column: span 2;
-}
-
-.gallery-item--featured img {
-  aspect-ratio: 2 / 1;
-  object-fit: contain;
   object-position: center;
 }
 
