@@ -1956,6 +1956,8 @@ a:hover {
 
 .gallery-item--featured img {
   aspect-ratio: 2 / 1;
+  object-fit: contain;
+  object-position: center;
 }
 
 .gallery-item-body {
