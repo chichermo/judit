@@ -1,5 +1,17 @@
 const fs = require("fs");
 const path = require("path");
+
+/** Listados de Etsy excluidos de la web (no mostrar en Obra / productos). */
+const BLOCK_LISTING_IDS = new Set([
+  "4477483282",
+  "4477480752",
+  "4477469729",
+  "4477474830",
+  "4477469854",
+  "4477467426",
+  "4477438970",
+]);
+
 const htmlPath = path.join(
   __dirname,
   "..",
@@ -15,14 +27,19 @@ for (const raw of scripts) {
   try {
     const j = JSON.parse(raw);
     if (j["@type"] === "ItemList" && Array.isArray(j.itemListElement)) {
-      items = j.itemListElement.map((x, i) => ({
-        id: i + 1,
-        name: x.item.name,
-        image: x.item.image,
-        price: x.item.offers?.price,
-        currency: x.item.offers?.priceCurrency,
-        url: x.item.url,
-      }));
+      items = j.itemListElement
+        .map((x) => ({
+          name: x.item.name,
+          image: x.item.image,
+          price: x.item.offers?.price,
+          currency: x.item.offers?.priceCurrency,
+          url: x.item.url,
+        }))
+        .filter((row) => {
+          const m = String(row.url || "").match(/listing\/(\d+)/);
+          return !m || !BLOCK_LISTING_IDS.has(m[1]);
+        })
+        .map((row, i) => ({ ...row, id: i + 1 }));
       break;
     }
   } catch (_) {}
