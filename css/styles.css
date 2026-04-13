@@ -2256,6 +2256,44 @@ a:hover {
   color: var(--text-muted);
 }
 
+.lineas-item--embroidery {
+  grid-column: 1 / -1;
+}
+
+.lineas-card.lineas-card--with-preview {
+  gap: 0.5rem;
+}
+
+.lineas-bordados-preview {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+  width: 100%;
+}
+
+.lineas-bordados-preview img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid rgba(40, 34, 24, 0.08);
+}
+
+@media (max-width: 900px) {
+  .lineas-bordados-preview {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .lineas-bordados-preview {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.35rem;
+  }
+}
+
 .page-sub .section-head--page {
   margin-bottom: 1.75rem;
 }
