@@ -7,6 +7,9 @@
  * - Studio (Taller) → Fotos/studio/ + js/studio-images-data.js
  *
  * TT_DRIVE_ROOT para otra ruta.
+ *
+ * Tras cambiar la galería, revisa src/build/main-lineas.html: las miniaturas
+ * de Líneas (salvo bordados en Fotos/lineas/bordados) usan rutas bajo Fotos/galeria/.
  */
 import fs from "fs";
 import path from "path";

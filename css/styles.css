@@ -2256,7 +2256,7 @@ a:hover {
   color: var(--text-muted);
 }
 
-.lineas-item--embroidery {
+.lineas-item--wide {
   grid-column: 1 / -1;
 }
 
@@ -2264,15 +2264,15 @@ a:hover {
   gap: 0.5rem;
 }
 
-.lineas-bordados-preview {
+.lineas-card-preview {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(5.25rem, 1fr));
   gap: 0.45rem;
   margin-top: 0.35rem;
   width: 100%;
 }
 
-.lineas-bordados-preview img {
+.lineas-card-preview img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
@@ -2281,15 +2281,9 @@ a:hover {
   border: 1px solid rgba(40, 34, 24, 0.08);
 }
 
-@media (max-width: 900px) {
-  .lineas-bordados-preview {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 520px) {
-  .lineas-bordados-preview {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lineas-card-preview {
+    grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr));
     gap: 0.35rem;
   }
 }
