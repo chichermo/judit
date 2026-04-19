@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#f7f5f1" />
-    <title>Obra · Tormenta Telar</title>
-    <meta name="description" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
-    <link rel="canonical" href="https://judit.vercel.app/obra.html" />
+    <title>Edición del sitio · Tormenta Telar</title>
+    <meta name="description" content="Acceso de administración para editar textos e imágenes publicados en el sitio." />
+    <link rel="canonical" href="https://judit.vercel.app/admin.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://judit.vercel.app/obra.html" />
-    <meta property="og:title" id="meta-og-title" content="Obra · Tormenta Telar" />
-    <meta property="og:description" id="meta-og-desc" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
+    <meta property="og:url" content="https://judit.vercel.app/admin.html" />
+    <meta property="og:title" id="meta-og-title" content="Edición del sitio · Tormenta Telar" />
+    <meta property="og:description" id="meta-og-desc" content="Acceso de administración para editar textos e imágenes publicados en el sitio." />
     <meta property="og:image" content="https://judit.vercel.app/Logos/logo-marca.png" />
     <meta property="og:locale" content="es_ES" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" id="meta-tw-title" content="Obra · Tormenta Telar" />
-    <meta name="twitter:description" id="meta-tw-desc" content="Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara." />
+    <meta name="twitter:title" id="meta-tw-title" content="Edición del sitio · Tormenta Telar" />
+    <meta name="twitter:description" id="meta-tw-desc" content="Acceso de administración para editar textos e imágenes publicados en el sitio." />
     <meta name="twitter:image" content="https://judit.vercel.app/Logos/logo-marca.png" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tormenta Telar","description":"Galería de piezas únicas: bordado, tejido, dibujo y volumen. Envíos desde la tienda Etsy de Judit Lara.","inLanguage":["es","en","nl","fr","de"],"url":"https://judit.vercel.app/"},{"@type":"Person","name":"Judit Lara","jobTitle":"Artista textil","sameAs":["https://www.instagram.com/tormentatelar/","https://www.etsy.com/shop/juditlarae/"],"url":"https://judit.vercel.app"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tormenta Telar","description":"Acceso de administración para editar textos e imágenes publicados en el sitio.","inLanguage":["es","en","nl","fr","de"],"url":"https://judit.vercel.app/"},{"@type":"Person","name":"Judit Lara","jobTitle":"Artista textil","sameAs":["https://www.instagram.com/tormentatelar/","https://www.etsy.com/shop/juditlarae/"],"url":"https://judit.vercel.app"}]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,9 +38,11 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="Logos/logo-marca.png" type="image/png" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <meta name="robots" content="noindex, nofollow" />
 
   </head>
-  <body class="page-sub" data-page="obra">
+  <body class="page-sub" data-page="admin">
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
     <div class="grain" aria-hidden="true"></div>
@@ -97,51 +99,78 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Principal">
           <ul class="nav-list">
-            <li><a href="index.html" data-nav data-i18n="nav.home">Inicio</a></li>
+            <li><a href="index.html" data-nav aria-current="page" data-i18n="nav.home">Inicio</a></li>
             <li><a href="taller.html" data-nav data-i18n="nav.studio">Taller</a></li>
             <li><a href="kit-telar.html" data-nav data-i18n="nav.kit">Kit de telar</a></li>
             <li><a href="sobre-mi.html" data-nav data-i18n="nav.about">Acerca de mí</a></li>
             <li><a href="lineas.html" data-nav data-i18n="nav.lines">Líneas</a></li>
-            <li><a href="obra.html" data-nav aria-current="page" data-i18n="nav.work">Obra</a></li>
+            <li><a href="obra.html" data-nav data-i18n="nav.work">Obra</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main" class="main-content">
-    <div class="container breadcrumb-wrap">
-      <nav class="breadcrumb" aria-label="Miga de pan">
-        <ol class="breadcrumb-list">
-          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
-          <li aria-current="page"><span data-i18n="nav.work">Obra</span></li>
-        </ol>
-      </nav>
-    </div>
-      <section class="section section-gallery section-page" id="galeria" aria-labelledby="obra-title">
-        <div class="container container--wide">
-          <div class="section-head section-head--gallery">
-            <div>
-              <h1 id="obra-title" class="section-title reveal reveal-up" data-i18n="gallery.title">Obra</h1>
-              <p class="section-intro obra-intro reveal reveal-up" data-i18n="collections.intro"></p>
-            </div>
-            <div class="gallery-meta reveal reveal-up">
-              <p class="gallery-hint" id="gallery-hint"></p>
-              <p class="gallery-count" aria-live="polite">
-                <span id="gallery-visible-count">0</span>
-                <span id="gallery-pieces-label" data-i18n="gallery.pieces">piezas</span>
-              </p>
-            </div>
+      <section class="admin-page" aria-labelledby="admin-title">
+        <h1 id="admin-title">Edición del sitio</h1>
+        <p class="admin-lead">
+          Acceso restringido. Los cambios de textos e imágenes se guardan en el almacenamiento del servidor (Vercel Blob).
+        </p>
+
+        <div id="admin-login" class="admin-card">
+          <h2>Iniciar sesión</h2>
+          <form id="form-login" class="admin-form" autocomplete="on">
+            <label for="admin-user">Usuario</label>
+            <input id="admin-user" name="username" type="text" autocomplete="username" required />
+            <label for="admin-pass">Contraseña</label>
+            <input id="admin-pass" name="password" type="password" autocomplete="current-password" required />
+            <button type="submit">Entrar</button>
+          </form>
+          <p id="login-msg" class="admin-msg" role="status"></p>
+        </div>
+
+        <div id="admin-panel" class="admin-hidden">
+          <div class="admin-actions" style="margin-bottom: 1rem">
+            <button type="button" id="btn-logout" class="btn-ghost">Cerrar sesión</button>
           </div>
-          <div class="filter-chips obra-chips reveal reveal-up" role="group" aria-label="Filtrar por línea">
-            <button type="button" class="chip is-active" data-filter="all"><span data-i18n="cat.all">Todo</span></button>
-            <button type="button" class="chip" data-filter="bordados"><span data-i18n="cat.bordados">Bordados</span></button>
-            <button type="button" class="chip" data-filter="dibujos"><span data-i18n="cat.dibujos">Dibujos</span></button>
-            <button type="button" class="chip" data-filter="instalacion"><span data-i18n="cat.instalacion">Instalación</span></button>
-            <button type="button" class="chip" data-filter="plasticina"><span data-i18n="cat.plasticina">Plasticina</span></button>
-            <button type="button" class="chip" data-filter="telar"><span data-i18n="cat.telar">Telar</span></button>
-            <button type="button" class="chip" data-filter="volumen"><span data-i18n="cat.volumen">Volumen</span></button>
+
+          <div class="admin-card">
+            <h2>Textos (todas las idiomas)</h2>
+            <p class="admin-hint">
+              JSON: claves por idioma (es, en, nl, fr, de) y dentro cada <code>clave i18n</code> → texto. Solo incluye las claves que quieras sustituir.
+              Ejemplo: <code>{"es":{"hero.headline":"Nuevo título"}}</code>
+            </p>
+            <textarea id="admin-i18n-json" class="admin-textarea" spellcheck="false"></textarea>
+            <p class="admin-hint">Tras guardar, recarga la página pública para ver los cambios (o espera unos segundos por la caché).</p>
           </div>
-          <div class="gallery-sections" id="gallery-grid"></div>
+
+          <div class="admin-card">
+            <h2>Galería Obra — añadir / quitar</h2>
+            <p class="admin-hint">
+              <strong>Añadir piezas:</strong> array <code>add</code> con objetos
+              <code>id</code> (número único, p. ej. 10001), <code>image</code> (URL), <code>category</code> (bordados, dibujos, instalacion, plasticina, telar, volumen),
+              <code>url</code> (Etsy), <code>name</code>, <code>price</code>, <code>currency</code>.
+            </p>
+            <p class="admin-hint">
+              <strong>Quitar piezas del listado base:</strong> en <code>removeIds</code> pon los <code>id</code> numéricos de la galería estática que quieras ocultar.
+            </p>
+            <textarea id="admin-gallery-json" class="admin-textarea" spellcheck="false"></textarea>
+          </div>
+
+          <div class="admin-card">
+            <h2>Subir imagen</h2>
+            <p class="admin-hint">PNG, JPG, WebP o GIF (máx. ~12&nbsp;MB). Copia la URL resultante y úsala en el JSON de galería.</p>
+            <div class="admin-upload-row">
+              <input type="file" id="admin-file" accept="image/png,image/jpeg,image/webp,image/gif" />
+              <button type="button" id="btn-upload">Subir</button>
+            </div>
+            <p id="upload-result" class="admin-msg"></p>
+          </div>
+
+          <div class="admin-actions">
+            <button type="button" id="btn-save">Guardar cambios</button>
+          </div>
+          <p id="save-msg" class="admin-msg" role="status"></p>
         </div>
       </section>
 
@@ -212,38 +241,7 @@
       <span class="fab-wa-label" data-i18n="wa.label">WhatsApp</span>
     </a>
 
-    <div
-      class="lightbox"
-      id="lightbox"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Vista ampliada"
-      hidden
-    >
-      <div class="lightbox-backdrop" data-close-lightbox></div>
-      <div class="lightbox-panel">
-        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar">×</button>
-        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Anterior">‹</button>
-        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Siguiente">›</button>
-        <figure class="lightbox-figure">
-          <img id="lightbox-img" src="" alt="" />
-          <figcaption class="lightbox-caption">
-            <p id="lightbox-title"></p>
-            <p class="lightbox-meta">
-              <span id="lightbox-price"></span>
-              <a id="lightbox-link" href="#" target="_blank" rel="noopener noreferrer">Ficha completa →</a>
-            </p>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
 
-    <script src="js/site-overrides.js"></script>
-    <script src="js/studio-bio.js"></script>
-    <script src="js/gallery-local-data.js"></script>
-    <script src="js/products-data.js"></script>
-    <script src="js/visit-counter.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/admin-panel.js"></script>
   </body>
 </html>

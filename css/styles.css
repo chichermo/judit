@@ -2375,6 +2375,11 @@ a:hover {
   color: var(--text);
 }
 
+.footer-links a.footer-admin {
+  font-weight: 500;
+  opacity: 0.75;
+}
+
 .footer-meta {
   margin-top: 1.15rem;
   padding-top: 1rem;

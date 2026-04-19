@@ -168,6 +168,12 @@ function pageHtml(opts) {
 
   const headMeta = headBlock({ title: headTitle, description: headDesc, path: pathname });
   const headAssets = readB("head-assets.html");
+  const headAdminExtra =
+    scripts === "admin"
+      ? `    <link rel="stylesheet" href="css/admin.css" />
+    <meta name="robots" content="noindex, nofollow" />
+`
+      : "";
   let header = applyNav(readB("header.html"), navActive);
   const footer = readB(footerName === "home" ? "footer-home.html" : "footer-sub.html");
   const main = readB(mainFile);
@@ -183,34 +189,41 @@ function pageHtml(opts) {
   const crumb = breadcrumb(crumbSlug || "");
 
   let scriptsHtml;
-  if (scripts === "gallery") {
-    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+  if (scripts === "admin") {
+    scriptsHtml = `    <script src="js/admin-panel.js"></script>`;
+  } else if (scripts === "gallery") {
+    scriptsHtml = `    <script src="js/site-overrides.js"></script>
+    <script src="js/studio-bio.js"></script>
     <script src="js/gallery-local-data.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else if (scripts === "home") {
-    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    scriptsHtml = `    <script src="js/site-overrides.js"></script>
+    <script src="js/studio-bio.js"></script>
     <script src="js/hero-carousel-data.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else if (scripts === "studio") {
-    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    scriptsHtml = `    <script src="js/site-overrides.js"></script>
+    <script src="js/studio-bio.js"></script>
     <script src="js/studio-images-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else if (scripts === "kit") {
-    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    scriptsHtml = `    <script src="js/site-overrides.js"></script>
+    <script src="js/studio-bio.js"></script>
     <script src="js/kit-images-data.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
   } else {
-    scriptsHtml = `    <script src="js/studio-bio.js"></script>
+    scriptsHtml = `    <script src="js/site-overrides.js"></script>
+    <script src="js/studio-bio.js"></script>
     <script src="js/visit-counter.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>`;
@@ -225,7 +238,7 @@ function pageHtml(opts) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#f7f5f1" />
 ${headMeta}
-${headAssets}
+${headAssets}${headAdminExtra}
   </head>
   <body${bodyAttrs}>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -353,6 +366,20 @@ const pages = [
 `,
     afterMain: "",
     scripts: "sub",
+  },
+  {
+    outfile: "admin.html",
+    bodyAttrs: ' class="page-sub" data-page="admin"',
+    headTitle: "Edición del sitio · Tormenta Telar",
+    headDesc: "Acceso de administración para editar textos e imágenes publicados en el sitio.",
+    path: "/admin.html",
+    navActive: "HOME",
+    footerName: "sub",
+    mainFile: "main-admin.html",
+    preMainDecor: `    <div class="grain" aria-hidden="true"></div>
+`,
+    afterMain: "",
+    scripts: "admin",
   },
 ];
 

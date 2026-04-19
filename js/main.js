@@ -11,6 +11,7 @@
     );
   }
 
+  function ttMain() {
   /** @typedef {{ id: number, name: string, image: string, price: string, currency: string, url: string }} Product */
 
   const I18N = window.TT_I18N;
@@ -21,7 +22,17 @@
   const yearEl = document.getElementById("year");
   const galleryGrid = document.getElementById("gallery-grid");
 
-  const pageGalleryLocal = page === "obra" ? window.__TT_GALLERY_LOCAL__ || [] : [];
+  const pageGalleryLocal =
+    page === "obra"
+      ? (function () {
+          const base = window.__TT_GALLERY_LOCAL__ || [];
+          const rem = window.__TT_GALLERY_REMOTE__ || { add: [], removeIds: [] };
+          const removeIds = new Set(rem.removeIds || []);
+          return [...base, ...(rem.add || [])].filter(
+            (p) => p && !removeIds.has(Number(p.id))
+          );
+        })()
+      : [];
   const products = /** @type {Product[]} */ ([...(window.__TT_PRODUCTS__ || []), ...pageGalleryLocal]);
 
   if (yearEl) {
@@ -716,4 +727,8 @@
 
   renderGallery();
   initGalleryTilt();
+  }
+
+  if (window.__TT_OVERRIDES_READY__) ttMain();
+  else window.addEventListener("tt-site-overrides", ttMain, { once: true });
 })();

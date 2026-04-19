@@ -7,6 +7,12 @@
     "sync:drive": "node scripts/sync-from-drive.mjs",
     "build": "node scripts/build.mjs",
     "start": "npm run build && npx --yes serve -l 3000 public",
-    "preview": "npm run build && npx --yes serve -l 3000 public"
+    "preview": "npm run build && npx --yes serve -l 3000 public",
+    "dev:vercel": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.3.3",
+    "formidable": "^3.5.4",
+    "jose": "^6.2.2"
   }
 }

@@ -682,6 +682,12 @@
 
   function t(key) {
     const lang = getLocale();
+    if (typeof window !== "undefined" && window.__TT_I18N_OVERRIDES__) {
+      const ov = window.__TT_I18N_OVERRIDES__[lang];
+      if (ov && Object.prototype.hasOwnProperty.call(ov, key)) {
+        return ov[key];
+      }
+    }
     const table = STRINGS[lang] || STRINGS[DEFAULT];
     return table[key] ?? STRINGS[DEFAULT][key] ?? key;
   }
@@ -867,5 +873,20 @@
     SUPPORTED,
   };
 
-  init();
+  function bootI18n() {
+    if (window.__TT_I18N_HAS_BOOTED) return;
+    window.__TT_I18N_HAS_BOOTED = true;
+    init();
+  }
+
+  if (typeof window !== "undefined" && window.__TT_OVERRIDES_READY__) {
+    bootI18n();
+  } else if (typeof window !== "undefined") {
+    window.addEventListener("tt-site-overrides", bootI18n, { once: true });
+    setTimeout(function () {
+      if (!window.__TT_I18N_HAS_BOOTED) bootI18n();
+    }, 8000);
+  } else {
+    init();
+  }
 })();
