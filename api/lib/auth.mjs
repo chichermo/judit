@@ -1,6 +1,48 @@
-import { SignJWT, jwtVerify } from "jose";
+import { createHmac, timingSafeEqual } from "node:crypto";
 
 const COOKIE = "tt_admin_session";
+
+/**
+ * Token firmado con HMAC-SHA256 (sin dependencias externas).
+ * Formato: base64url(payloadJson).base64url(hmac)
+ */
+export function signSessionToken(secret) {
+  const exp = Math.floor(Date.now() / 1000) + 7 * 24 * 60 * 60;
+  const body = JSON.stringify({ sub: "admin", exp });
+  const payload = Buffer.from(body, "utf8").toString("base64url");
+  const sig = createHmac("sha256", String(secret)).update(payload).digest("base64url");
+  return `${payload}.${sig}`;
+}
+
+/**
+ * @param {string} token
+ * @param {string} secret
+ */
+function verifyTokenString(token, secret) {
+  const parts = String(token).split(".");
+  if (parts.length !== 2) return null;
+  const [payload, sig] = parts;
+  if (!payload || !sig) return null;
+  const expected = createHmac("sha256", String(secret)).update(payload).digest("base64url");
+  try {
+    const a = Buffer.from(sig, "utf8");
+    const b = Buffer.from(expected, "utf8");
+    if (a.length !== b.length) return null;
+    if (!timingSafeEqual(a, b)) return null;
+  } catch {
+    return null;
+  }
+  let data;
+  try {
+    const json = Buffer.from(payload, "base64url").toString("utf8");
+    data = JSON.parse(json);
+  } catch {
+    return null;
+  }
+  if (data.sub !== "admin") return null;
+  if (typeof data.exp !== "number" || data.exp < Math.floor(Date.now() / 1000)) return null;
+  return data;
+}
 
 /** @param {import('http').IncomingMessage} req */
 export function getCookie(req, name) {
@@ -15,18 +57,12 @@ export function getCookie(req, name) {
 }
 
 /** @param {import('http').IncomingMessage} req */
-export async function verifyAuth(req) {
+export function verifyAuth(req) {
   const token = getCookie(req, COOKIE);
   if (!token) return null;
   const secret = process.env.AUTH_SECRET;
   if (!secret || secret.length < 16) return null;
-  try {
-    const { payload } = await jwtVerify(token, new TextEncoder().encode(secret));
-    if (payload.sub !== "admin") return null;
-    return payload;
-  } catch {
-    return null;
-  }
+  return verifyTokenString(token, secret);
 }
 
 export function setSessionCookie(res, token, maxAgeSec = 60 * 60 * 24 * 7) {
@@ -40,18 +76,6 @@ export function setSessionCookie(res, token, maxAgeSec = 60 * 60 * 24 * 7) {
 export function clearSessionCookie(res) {
   const secure = process.env.VERCEL === "1" ? "; Secure" : "";
   res.setHeader("Set-Cookie", `${COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`);
-}
-
-/**
- * @param {import('http').ServerResponse} res
- * @param {string} secret
- */
-export async function signSessionToken(secret) {
-  return new SignJWT({ sub: "admin" })
-    .setProtectedHeader({ alg: "HS256" })
-    .setIssuedAt()
-    .setExpirationTime("7d")
-    .sign(new TextEncoder().encode(secret));
 }
 
 export { COOKIE };

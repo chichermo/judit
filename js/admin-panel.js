@@ -64,7 +64,19 @@
     });
     const d = await r.json().catch(() => ({}));
     if (!r.ok) {
-      showMsg(loginMsg, d.error === "invalid_credentials" ? "Usuario o contraseña incorrectos." : "No se pudo iniciar sesión.", "error");
+      if (d.error === "invalid_credentials") {
+        showMsg(loginMsg, "Usuario o contraseña incorrectos.", "error");
+      } else if (d.error === "server_not_configured" && d.hint) {
+        showMsg(loginMsg, d.hint, "error");
+      } else if (r.status === 503) {
+        showMsg(
+          loginMsg,
+          "Servidor no listo (503). Abre /api/health en el mismo sitio: si auth es false, falta configurar ADMIN_PASSWORD y AUTH_SECRET en Vercel.",
+          "error"
+        );
+      } else {
+        showMsg(loginMsg, "No se pudo iniciar sesión.", "error");
+      }
       return;
     }
     $("admin-pass").value = "";

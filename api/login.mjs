@@ -22,7 +22,12 @@ export default async function handler(req, res) {
   const secret = process.env.AUTH_SECRET;
 
   if (!expectPass || !secret || secret.length < 16) {
-    json(res, 503, { ok: false, error: "server_not_configured" });
+    json(res, 503, {
+      ok: false,
+      error: "server_not_configured",
+      hint:
+        "En Vercel → Settings → Environment Variables añade ADMIN_PASSWORD y AUTH_SECRET (mínimo 16 caracteres). Aplica a Production y Preview, y vuelve a desplegar.",
+    });
     return;
   }
 
@@ -31,7 +36,7 @@ export default async function handler(req, res) {
     return;
   }
 
-  const token = await signSessionToken(secret);
+  const token = signSessionToken(secret);
   setSessionCookie(res, token);
   json(res, 200, { ok: true });
 }

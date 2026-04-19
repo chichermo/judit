@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     json(res, 405, { ok: false, error: "method" });
     return;
   }
-  const auth = await verifyAuth(req);
+  const auth = verifyAuth(req);
   if (!auth) {
     json(res, 401, { ok: false, error: "unauthorized" });
     return;

@@ -6,6 +6,6 @@ export default async function handler(req, res) {
     json(res, 405, { ok: false, error: "method" });
     return;
   }
-  const user = await verifyAuth(req);
+  const user = verifyAuth(req);
   json(res, 200, { ok: !!user });
 }
