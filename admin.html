@@ -114,7 +114,7 @@
       <section class="admin-page" aria-labelledby="admin-title">
         <h1 id="admin-title">Edición del sitio</h1>
         <p class="admin-lead">
-          Acceso restringido. Los cambios de textos e imágenes se guardan en el almacenamiento del servidor (Vercel Blob).
+          Elige qué quieres cambiar: textos por sección, piezas en la galería o imágenes del carrusel de inicio. Los cambios se guardan en el servidor.
         </p>
 
         <div id="admin-login" class="admin-card">
@@ -134,32 +134,13 @@
             <button type="button" id="btn-logout" class="btn-ghost">Cerrar sesión</button>
           </div>
 
-          <div class="admin-card">
-            <h2>Textos (todas las idiomas)</h2>
-            <p class="admin-hint">
-              JSON: claves por idioma (es, en, nl, fr, de) y dentro cada <code>clave i18n</code> → texto. Solo incluye las claves que quieras sustituir.
-              Ejemplo: <code>{"es":{"hero.headline":"Nuevo título"}}</code>
-            </p>
-            <textarea id="admin-i18n-json" class="admin-textarea" spellcheck="false"></textarea>
-            <p class="admin-hint">Tras guardar, recarga la página pública para ver los cambios (o espera unos segundos por la caché).</p>
-          </div>
-
-          <div class="admin-card">
-            <h2>Galería Obra — añadir / quitar</h2>
-            <p class="admin-hint">
-              <strong>Añadir piezas:</strong> array <code>add</code> con objetos
-              <code>id</code> (número único, p. ej. 10001), <code>image</code> (URL), <code>category</code> (bordados, dibujos, instalacion, plasticina, telar, volumen),
-              <code>url</code> (Etsy), <code>name</code>, <code>price</code>, <code>currency</code>.
-            </p>
-            <p class="admin-hint">
-              <strong>Quitar piezas del listado base:</strong> en <code>removeIds</code> pon los <code>id</code> numéricos de la galería estática que quieras ocultar.
-            </p>
-            <textarea id="admin-gallery-json" class="admin-textarea" spellcheck="false"></textarea>
-          </div>
+          <div id="admin-app-root"></div>
 
           <div class="admin-card">
             <h2>Subir imagen</h2>
-            <p class="admin-hint">PNG, JPG, WebP o GIF (máx. ~12&nbsp;MB). Copia la URL resultante y úsala en el JSON de galería.</p>
+            <p class="admin-hint">
+              Sube una imagen y copia la URL para pegarla arriba (galería o carrusel). PNG, JPG, WebP o GIF (máx. ~12&nbsp;MB).
+            </p>
             <div class="admin-upload-row">
               <input type="file" id="admin-file" accept="image/png,image/jpeg,image/webp,image/gif" />
               <button type="button" id="btn-upload">Subir</button>
@@ -242,6 +223,9 @@
     </a>
 
 
+    <script src="js/gallery-local-data.js"></script>
+    <script src="js/hero-carousel-data.js"></script>
+    <script src="js/admin-catalog.js"></script>
     <script src="js/admin-panel.js"></script>
   </body>
 </html>

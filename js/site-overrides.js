@@ -5,6 +5,7 @@
 (function () {
   window.__TT_I18N_OVERRIDES__ = {};
   window.__TT_GALLERY_REMOTE__ = { add: [], removeIds: [] };
+  window.__TT_HERO_CAROUSEL_REMOTE__ = null;
   window.__TT_OVERRIDES_READY__ = false;
 
   fetch("/api/site-data")
@@ -14,6 +15,9 @@
     .then(function (data) {
       if (data && data.i18n) window.__TT_I18N_OVERRIDES__ = data.i18n;
       if (data && data.gallery) window.__TT_GALLERY_REMOTE__ = data.gallery;
+      if (data && data.heroCarousel && typeof data.heroCarousel === "object") {
+        window.__TT_HERO_CAROUSEL_REMOTE__ = data.heroCarousel;
+      }
     })
     .catch(function () {})
     .finally(function () {

@@ -2,10 +2,33 @@ import { list, put } from "@vercel/blob";
 
 const PATH = "tt-admin/site-data.json";
 
+export function defaultHeroCarousel() {
+  return { slides: [], mode: "append", prepend: false };
+}
+
 export function defaultSiteData() {
   return {
     i18n: {},
     gallery: { add: [], removeIds: [] },
+    heroCarousel: defaultHeroCarousel(),
+  };
+}
+
+export function normalizeHeroCarousel(raw) {
+  const base = defaultHeroCarousel();
+  if (!raw || typeof raw !== "object") return base;
+  const slides = Array.isArray(raw.slides)
+    ? raw.slides
+        .map((s) => ({
+          image: String(s?.image ?? "").trim(),
+          url: String(s?.url ?? "").trim() || "https://www.etsy.com/shop/juditlarae/",
+        }))
+        .filter((s) => s.image)
+    : [];
+  return {
+    slides,
+    mode: raw.mode === "replace" ? "replace" : "append",
+    prepend: !!raw.prepend,
   };
 }
 
@@ -27,6 +50,7 @@ export async function loadSiteData() {
         add: Array.isArray(data.gallery?.add) ? data.gallery.add : [],
         removeIds: Array.isArray(data.gallery?.removeIds) ? data.gallery.removeIds : [],
       },
+      heroCarousel: normalizeHeroCarousel(data.heroCarousel),
     };
   } catch {
     return base;

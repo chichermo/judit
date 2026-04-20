@@ -190,7 +190,10 @@ function pageHtml(opts) {
 
   let scriptsHtml;
   if (scripts === "admin") {
-    scriptsHtml = `    <script src="js/admin-panel.js"></script>`;
+    scriptsHtml = `    <script src="js/gallery-local-data.js"></script>
+    <script src="js/hero-carousel-data.js"></script>
+    <script src="js/admin-catalog.js"></script>
+    <script src="js/admin-panel.js"></script>`;
   } else if (scripts === "gallery") {
     scriptsHtml = `    <script src="js/site-overrides.js"></script>
     <script src="js/studio-bio.js"></script>

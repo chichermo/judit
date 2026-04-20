@@ -308,7 +308,21 @@
       if (video) video.pause();
       carouselRoot?.classList.add("hero-media--carousel");
       carouselRoot?.classList.remove("hero-media--video");
-      const slides = window.__TT_HERO_CAROUSEL__ || [];
+      const local = window.__TT_HERO_CAROUSEL__ || [];
+      const remote = window.__TT_HERO_CAROUSEL_REMOTE__;
+      /** @type {{ image: string, url: string }[]} */
+      let slides = [];
+      if (remote && typeof remote === "object" && Array.isArray(remote.slides)) {
+        if (remote.mode === "replace") {
+          slides = remote.slides.length ? remote.slides : local;
+        } else if (remote.slides.length) {
+          slides = remote.prepend ? [...remote.slides, ...local] : [...local, ...remote.slides];
+        } else {
+          slides = local;
+        }
+      } else {
+        slides = local;
+      }
       if (slides.length) {
         initHeroCarouselFromSlides(slides);
       } else {
@@ -510,11 +524,20 @@
   const lightboxPrice = document.getElementById("lightbox-price");
   const lightboxLink = document.getElementById("lightbox-link");
 
-  /** Orden fijo por carpeta del archivo; dentro de cada una, por id. */
+  /** Orden fijo por carpeta del archivo; dentro de cada una, por orderInSection o id. */
   function sortForGallery(a, b) {
     const ia = GALLERY_SECTION_KEYS.indexOf(a.category);
     const ib = GALLERY_SECTION_KEYS.indexOf(b.category);
     if (ia !== ib) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    const oa =
+      typeof a.orderInSection === "number" && Number.isFinite(a.orderInSection)
+        ? a.orderInSection
+        : a.id;
+    const ob =
+      typeof b.orderInSection === "number" && Number.isFinite(b.orderInSection)
+        ? b.orderInSection
+        : b.id;
+    if (oa !== ob) return oa - ob;
     return a.id - b.id;
   }
 

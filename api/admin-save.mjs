@@ -1,5 +1,5 @@
 import { verifyAuth } from "./lib/auth.mjs";
-import { loadSiteData, saveSiteData } from "./lib/site-data-blob.mjs";
+import { loadSiteData, normalizeHeroCarousel, saveSiteData } from "./lib/site-data-blob.mjs";
 import { json, readJsonBody } from "./lib/http.mjs";
 
 export default async function handler(req, res) {
@@ -24,6 +24,10 @@ export default async function handler(req, res) {
         ? body.gallery.removeIds.map(Number).filter((n) => !Number.isNaN(n))
         : cur.gallery.removeIds,
     },
+    heroCarousel:
+      body.heroCarousel !== undefined && body.heroCarousel !== null
+        ? normalizeHeroCarousel(body.heroCarousel)
+        : cur.heroCarousel,
   };
 
   try {
