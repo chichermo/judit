@@ -1,12 +1,24 @@
 import { timingSafeEqual } from "node:crypto";
-import { signSessionToken, setSessionCookie } from "./lib/auth.mjs";
+import { getAuthSecret, signSessionToken, setSessionCookie } from "./lib/auth.mjs";
 import { json, readJsonBody } from "./lib/http.mjs";
 
-function safeUserMatch(a, b) {
-  const x = Buffer.from(String(a || ""), "utf8");
-  const y = Buffer.from(String(b || ""), "utf8");
+/** Quita BOM/espacios que suelen colarse al pegar en Vercel. */
+function norm(s) {
+  return String(s ?? "")
+    .replace(/^\uFEFF/, "")
+    .replace(/\u200b/g, "")
+    .trim();
+}
+
+function safePassMatch(a, b) {
+  const x = Buffer.from(norm(a), "utf8");
+  const y = Buffer.from(norm(b), "utf8");
   if (x.length !== y.length) return false;
   return timingSafeEqual(x, y);
+}
+
+function usernameMatch(a, b) {
+  return norm(a).toLowerCase() === norm(b).toLowerCase();
 }
 
 export default async function handler(req, res) {
@@ -17,11 +29,11 @@ export default async function handler(req, res) {
   const body = await readJsonBody(req);
   const username = body.username;
   const password = body.password;
-  const expectUser = process.env.ADMIN_USERNAME || "Judit";
+  const expectUser = norm(process.env.ADMIN_USERNAME || "Judit");
   const expectPass = process.env.ADMIN_PASSWORD;
-  const secret = process.env.AUTH_SECRET;
+  const secret = getAuthSecret();
 
-  if (!expectPass || !secret || secret.length < 16) {
+  if (!norm(expectPass) || secret.length < 16) {
     json(res, 503, {
       ok: false,
       error: "server_not_configured",
@@ -31,7 +43,7 @@ export default async function handler(req, res) {
     return;
   }
 
-  if (!safeUserMatch(username, expectUser) || !safeUserMatch(password, expectPass)) {
+  if (!usernameMatch(username, expectUser) || !safePassMatch(password, expectPass)) {
     json(res, 401, { ok: false, error: "invalid_credentials" });
     return;
   }
