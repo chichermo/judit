@@ -2,7 +2,7 @@
   "name": "tormenta-telar",
   "private": true,
   "description": "Tormenta Telar",
-  "homepage": "https://judit.vercel.app",
+  "homepage": "https://www.tormentatelar.com",
   "scripts": {
     "sync:gallery": "node scripts/sync-from-drive.mjs",
     "sync:drive": "node scripts/sync-from-drive.mjs",
